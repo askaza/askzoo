@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates
+		xmlns:a="http://slcf/templates/settings/bem-scheme/additional"
+		xmlns:b="http://slcf/templates/settings/bem-scheme/block"
+		xmlns:d="http://slcf/templates/settings/bem-scheme/data"
+		xmlns:e="http://slcf/templates/settings/bem-scheme/element"
+		xmlns:p="http://slcf/templates/settings/bem-scheme/pointer"
+		xmlns:m="http://slcf/templates/settings/bem-scheme/modification"
+		xmlns:t="http://slcf/templates/settings/bem-scheme/template"
+		xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml"
+		xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class"
+		>
+
+<!-- header > -->
+	<t:header>
+		<b:header>
+			<p:logo />
+			<p:auth />
+			<p:nav />
+			<p:header-search />
+			<p:breadcrumbs />
+		</b:header>
+	</t:header>
+
+	<t:logo>
+	    <b:logo>
+		<b:link x:href="./index.html">
+		    <e:image x:src="images/logo.png" x:alt="AskZoo" x:title="AskZoo" />
+		</b:link>
+		<e:slogan>
+		    <b:version>beta 0.1</b:version> Животные во всех подробностях</e:slogan>
+	    </b:logo>
+	</t:logo>
+
+	<t:auth>
+	    <b:auth>
+		<e:block>
+		    <b:userpic>
+			<e:image src="images/content/user1.jpg" alt="UserName" title="UserName" />
+		    </b:userpic>
+		</e:block>
+		<e:block>
+		    <b:box>
+			<m:size val="small" />
+			<m:type val="messages" />
+			234
+		    </b:box>
+		</e:block>
+		<e:block>
+		    <b:box>
+			<m:size val="small" />
+			<m:type val="profile" />
+			<b:ico><m:content val="write" /></b:ico>
+		    </b:box>
+		</e:block>
+	    </b:auth>
+	</t:auth>
+
+	<t:nav>
+	    <b:nav>
+		<e:item>
+		    <m:type val="active-category" />
+		    <e:image x:src="images/content/cat-category.png" x:alt="" x:title="" />
+		    <b:menu-item-title>
+			<b:counter>3452</b:counter>
+			кошки
+		    </b:menu-item-title>
+		    <b:link>
+			<a:category-changer />
+			<b:ico>
+			    <m:content val="arrow-next" />
+			</b:ico>
+		    </b:link>
+		</e:item>
+		<e:item>
+		    <m:type val="shelter" />
+		    <b:link>
+			<b:menu-item-title>
+			    <b:counter>3452</b:counter>
+			    кошки
+			</b:menu-item-title>
+		    </b:link>
+		</e:item>
+		<e:item>
+		    <m:type val="sections" />
+		    <b:menu>
+			<e:item>
+			    <b:link>
+				<b:menu-item-title>
+				    <b:counter>345</b:counter>
+				    вопросы
+				</b:menu-item-title>
+			    </b:link>
+			    <b:menu>
+				<m:type val="nested" />
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    темы
+					    <b:counter>23</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    эксперты
+					    <b:counter>92</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    породы
+					    <b:counter>75</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+			    </b:menu>
+			</e:item>
+			<e:item>
+			    <b:link>
+				<b:menu-item-title>
+				    <b:counter>854</b:counter>
+				    гайды
+				</b:menu-item-title>
+			    </b:link>
+			     <b:menu>
+				<m:type val="nested" />
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    темы
+					    <b:counter>23</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    эксперты
+					    <b:counter>92</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    заявки
+					    <b:counter>75</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+			    </b:menu>
+			</e:item>
+			<e:item>
+			    <b:link>
+				<b:menu-item-title>
+				    <b:counter>8354</b:counter>
+				    фото
+				</b:menu-item-title>
+			    </b:link>
+			     <b:menu>
+				<m:type val="nested" />
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    чемпионы
+					    <b:counter>23</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    питомники
+					    <b:counter>92</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+				<e:item>
+				    <b:link>
+					<b:menu-item-title>
+					    породы
+					    <b:counter>75</b:counter>
+					</b:menu-item-title>
+				    </b:link>
+				</e:item>
+			    </b:menu>
+			</e:item>
+		    </b:menu>
+		</e:item>
+
+		<e:item>
+		    <m:type val="guide" />
+		</e:item>
+
+	    </b:nav>
+	</t:nav>
+
+	<t:header-search>
+
+	</t:header-search>
+
+
+	<!-- header < -->
+
+</templates>

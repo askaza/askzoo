@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates
+	xmlns:a="http://slcf/templates/settings/bem-scheme/additional"
+	xmlns:b="http://slcf/templates/settings/bem-scheme/block"
+	xmlns:d="http://slcf/templates/settings/bem-scheme/data"
+	xmlns:e="http://slcf/templates/settings/bem-scheme/element"
+	xmlns:p="http://slcf/templates/settings/bem-scheme/pointer"
+	xmlns:m="http://slcf/templates/settings/bem-scheme/modification"
+	xmlns:t="http://slcf/templates/settings/bem-scheme/template"
+	xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml"
+	xmlns:un="http://slcf/templates/settings/bem-scheme/unknown-namespace"
+	xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class"
+	>
+
+
+
+
+	<!-- main > -->
+	<t:main>
+		<b:main>
+			<p:main-carousel-block/>
+			<b:stripe><a:main-content/>
+				<e:in>
+				<b:columns-two><a:columns-divider/>
+					<b:aside>
+						<p:left-sidebar/>
+					</b:aside>
+					<b:column>
+						<a:column-main/>
+						<p:column-main/>
+					</b:column>
+				</b:columns-two>
+			</e:in>
+			</b:stripe>
+		</b:main>
+	</t:main>
+	<!-- main < -->
+
+	<t:main-carousel-block>
+		<cdata><![CDATA[ ]]></cdata>
+	</t:main-carousel-block>
+
+	<t:left-sidebar>
+		<a:column/><a:column-sidebar/><a:left/>
+
+	</t:left-sidebar>
+
+	<t:column-main>
+		<cdata><![CDATA[
+				]]></cdata>
+	</t:column-main>
+
+	<t:breadcrumbs>
+		<b:breadcrumbs>
+			<e:item><b:link><b:ico><m:type val="breadcrumbs-home"/></b:ico></b:link></e:item>
+		</b:breadcrumbs>
+	</t:breadcrumbs>
+
+
+
+
+	<t:pagination>
+		<b:pagination>
+			<e:prev><b:link><a:inactive/><cdata><![CDATA[<span class="b-pagination-arr">&larr;</span>]]></cdata></b:link></e:prev>
+			<b:pages>
+				<e:item><b:link><a:current/>1</b:link></e:item>
+				<e:item><b:link>2</b:link></e:item>
+				<e:item><b:link>3</b:link></e:item>
+				<e:item><b:link>4</b:link></e:item>
+				<e:item><b:link>5</b:link></e:item>
+				<e:item><cdata><![CDATA[<span>...</span>]]></cdata></e:item>
+				<e:item><b:link>20</b:link></e:item>
+			</b:pages>
+			<e:next><b:link><a:active/><cdata><![CDATA[<span class="b-pagination-arr">&rarr;</span>]]></cdata></b:link></e:next>
+		</b:pagination>
+	</t:pagination>
+
+
+
+
+</templates>

@@ -1,0 +1,88 @@
+/* theme > */
+@color-body-bg:#f2f2f2;
+@color-body-text:#000000;
+
+@color-footer-bg:#000000;
+@color-footer-text:#ffffff;
+@color-header-top-bg:#000000;
+@color-header-top-text:#ffffff;
+@color-header-content-bg:#826754;
+@color-header-content-text:#ffffff;
+
+@color-useful-links-bg:#e6e6e6;
+@color-useful-links-text:#3a464b;
+
+@color-link:#ba5858;
+@color-link-hover:lighten(@color-link, 15%);
+
+
+/* Fonts */
+@font-family-arial:Arial, Tahoma, sans-serif;
+@font-family-georgia:Georgia, "Times New Roman", Times, serif;
+@font-family-times:"Times New Roman", Times, serif;
+@font-family-trebuchet:"Trebuchet MS", Helvetica, sans-serif;
+
+@font-family-freeset:Arial, Tahoma, sans-serif;
+@font-family-freeset-bold:Arial, Tahoma, sans-serif;
+
+/* background urls > */
+@background-url-icons:url(../images/bg/icons.png);
+@background-url-bookshelf:url(../images/bg/book_shelf.png);
+@background-url-mask:url(../images/bg/mask.png);
+
+/* Tabs > */
+@color-tab-text-active:#fff;
+@color-tab-text-inactive: #666666;
+@color-tabs-bg-active:#ba5858;
+@color-tabs-bg-inactive:#e5e5e5;
+@color-tabs-border-active:#e5e5e5;
+/* Tabs < */
+
+/* forms > */
+@color-form-button-bg:#ba5857;
+@color-form-field-bg:#fff;
+@color-form-field-border:#e5e5e5;
+@color-form-error:#e53f24;
+@color-form-background-error:#faf4f2;
+/* forms < */
+
+/* Pagination > */
+@color-pagination-text:#000;
+@color-pagination-bg-regular:#e6e6e6;
+@color-pagination-text-inactive:#D0D0D0;
+@color-pagination-text-active:#fff;
+@color-pagination-bg-hover:#b85655;
+@color-pagination-bg-active:#9a9a9a;
+/* Pagination < */
+
+/* Table of Contents > */
+@color-contents-index-text:#000;
+@color-contents-index-text-active:#fff;
+@color-contents-index-text-inactive:#D0D0D0;
+@color-contents-index-bg-selected:#999;
+@color-contents-index-bg-hover:#b85655;
+/* Table of Contents < */
+
+/* breadcrumbs > */
+@color-breadcrumbs-text:#8c8c8c;
+@color-breadcrumbs-hover:#ba5858;
+@color-breadcrumbs-divider:#ccc;
+/* breadcrumbs < */
+
+/* rules > */
+.rule-sidebar-navigation-level0 (@color-bg:#fffbeb,@color-text:#b96806) {
+	background: @color-bg;
+	color: @color-text;
+	a:hover {
+		color: @color-text;
+	}
+	.b-navigation__title a {
+		color: @color-text;
+		&:hover {
+			color: lighten(@color-text, 15%);
+		}
+	}
+	.b-active > .b-navigation-trigger .b-navigation-trigger__ico {
+		border-top: 3px solid @color-text;
+	}
+}

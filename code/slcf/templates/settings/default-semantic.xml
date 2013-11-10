@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<default-semantic
+	xmlns:a="http://slcf/templates/settings/bem-scheme/additional"
+	xmlns:b="http://slcf/templates/settings/bem-scheme/block"
+	xmlns:d="http://slcf/templates/settings/bem-scheme/data"
+	xmlns:e="http://slcf/templates/settings/bem-scheme/element"
+	xmlns:p="http://slcf/templates/settings/bem-scheme/pointer"
+	xmlns:m="http://slcf/templates/settings/bem-scheme/modification"
+	xmlns:t="http://slcf/templates/settings/bem-scheme/template"
+	xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml"
+	xmlns:un="http://slcf/templates/settings/bem-scheme/unknown-namespace"
+	xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class"
+	>
+	<!--html document > -->
+	<b:xdocument noclass="true" tag="html" x:lang="ru"/>
+	<e:head block="xdocument" noclass="true" tag="head"/>
+	<e:title block="xdocument" noclass="true" tag="title"/>
+	<e:body block="xdocument" noclass="true" tag="body"/>
+	<b:xlink noclass="true" tag="link"/>
+	<b:xscript noclass="true" tag="script"/>
+	<m:style block="xlink" x:rel="stylesheet" x:media="screen"/>
+	<m:favicon block="xlink" x:rel="shortcut icon" x:href="favicon.png" x:type="image/x-icon"/>
+
+	<!--<b:xscript noclass="true" tag="script" x:type="text/javascript" x:src="js/jquery.js"/>-->
+	<b:xmeta noclass="true" tag="meta"/>
+	<m:content val="charset" block="xmeta" x:charset="utf-8"/>
+
+	<!-- for html5 syntax of charset declaration in ant build run replaceregexp which delete xhtml charset declaration-->
+	<!--<m:content val="charset" block="xmeta" x:http-equiv="Content-Type" x:content="text/html; charset=UTF-8"/>-->
+	<m:content val="description" block="xmeta" x:name="description" x:content="Lit Portal Description goes here"/>
+	<m:content val="keywords" block="xmeta" x:name="keywords" x:content="Lit Portal Keywords go here"/>
+	<m:content val="imagetoolbar" block="xmeta" x:http-equiv="imagetoolbar" x:content="no"/>
+	<m:content val="viewport" x:name="viewport" block="xmeta" x:content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1"/>
+	<m:content val="apple-standalone" x:name="apple-mobile-web-app-capable" x:content="yes" block="xmeta" />
+	<m:content val="ua-compatible" block="xmeta" x:content="IE=edge" x:http-equiv="X-UA-Compatible" />
+	<!--html document < -->
+
+
+
+	<!-- main blocks > -->
+	<b:header tag="header"/>
+	<b:footer tag="footer"/>
+	<b:aside tag="aside"/>
+	<b:navigation tag="nav"/>
+	<b:section tag="section"/>
+	<!-- main blocks < -->
+
+
+	<!--img > -->
+	<e:image tag="img" x:alt="" x:title=""/>
+	<b:image tag="img" x:alt="" x:title=""/>
+	<!--img < -->
+
+	<!--lists > -->
+	<b:list tag="ul"/>
+		<e:item block="list" tag="li"/>
+	<b:menu tag="ul"/>
+		<e:item block="navigation" tag="li"/>
+	<b:news tag="ul"/>
+		<e:item block="news" tag="li"/>
+
+
+	<!--lists > -->
+
+	<b:link tag="a" x:href=""/>
+	<m:type val="pseudo" block="link" tag="span"/>
+	<!--lists < -->
+
+	<!--icons > -->
+	<b:ico tag="i"/>
+	<!--icons < -->
+
+
+
+	<!--table > -->
+	<b:table tag="table"/>
+	<b:table-group tag="tbody"/>
+	<m:type val="heading" block="table-group" tag="thead"/>
+	<m:type val="footer" block="table-group" tag="tfoot"/>
+	<b:table-row tag="tr"/>
+	<b:cell tag="td"/>
+	<m:type val="heading" block="cell" tag="th"/>
+	<e:colgroup block="table" tag="colgroup"/>
+	<e:col block="table" tag="col"/>
+
+
+	<!--table <-->
+
+	<!--form > -->
+	<b:form tag="form" x:action="" x:novalidate="" />
+
+	<b:form-line tag="div"/>
+		<!--<b:form-item tag="dl" />
+			<e:label block="form-item" tag="dt" />
+			<e:field block="form-item" tag="dd" />-->
+		<b:form-button tag="div"/>
+
+	<b:form-block tag="div"/>
+	<!--<b:error-text tag="span"/-->>
+
+	<b:label tag="label" />
+
+	<b:fieldset tag="fieldset"/>
+	<b:legend tag="legend"/>
+
+	<b:input-text tag="input" x:type="text" x:maxlength="255" />
+	<b:input-number tag="input" x:type="number" />
+	<b:input-color tag="input" x:type="color" />
+	<b:input-date tag="input" x:type="date" />
+	<b:input-datetime tag="input" x:type="datetime" />
+	<b:input-datetime-local tag="input" x:type="datetime-local" />
+	<b:input-email tag="input" x:type="email" />
+	<b:input-month tag="input" x:type="month" />
+	<b:input-tel tag="input" x:type="tel" />
+	<b:input-range tag="input" x:type="range" />
+	<b:input-search tag="input" x:type="search" x:name="googlesearch" />
+	<b:input-time tag="input" x:type="time" />
+	<b:input-url tag="input" x:type="url" />
+	<b:input-week tag="input" x:type="week" />
+
+
+	<b:input-password tag="input" x:type="password" x:maxlength="255" />
+	<b:input-file tag="input" x:type="file" />
+	<b:textarea tag="textarea" />
+	<b:input-submit tag="input" x:type="submit" x:value="Submit" />
+	<b:input-btn tag="input" x:type="button" x:value="Button" />
+	<b:input-hidden tag="input" x:type="hidden" x:value="" />
+	<b:input-radio tag="input" x:type="radio" />
+	<b:input-chbx tag="input" x:type="checkbox" />
+
+	<b:button tag="button" type="button" />
+	<b:select tag="select" />
+	<e:option block="select" tag="option" />
+	<!--form < -->
+
+
+	<!--headings >-->
+	<b:page-header tag="h1"/>
+
+
+	<!--headings < -->
+
+	
+
+
+</default-semantic>
