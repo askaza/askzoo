@@ -89,17 +89,10 @@
 	<!--form > -->
 	<b:form tag="form" x:action="" x:novalidate="" />
 
-	<b:form-line tag="div"/>
-		<!--<b:form-item tag="dl" />
-			<e:label block="form-item" tag="dt" />
-			<e:field block="form-item" tag="dd" />-->
-		<b:form-button tag="div"/>
-
-	<b:form-block tag="div"/>
 	<!--<b:error-text tag="span"/-->>
 
 	<b:label tag="label" />
-
+	<b:field-group tag="div" />
 	<b:fieldset tag="fieldset"/>
 	<b:legend tag="legend"/>
 
@@ -117,8 +110,6 @@
 	<b:input-time tag="input" x:type="time" />
 	<b:input-url tag="input" x:type="url" />
 	<b:input-week tag="input" x:type="week" />
-
-
 	<b:input-password tag="input" x:type="password" x:maxlength="255" />
 	<b:input-file tag="input" x:type="file" />
 	<b:textarea tag="textarea" />
@@ -127,11 +118,14 @@
 	<b:input-hidden tag="input" x:type="hidden" x:value="" />
 	<b:input-radio tag="input" x:type="radio" />
 	<b:input-chbx tag="input" x:type="checkbox" />
-
-	<b:button tag="button" type="button" />
 	<b:select tag="select" />
 	<e:option block="select" tag="option" />
+
+	<b:button tag="span" />
+	<e:in block="button" tag="input" x:type="button" />
 	<!--form < -->
+
+
 
 
 	<!--headings >-->
@@ -140,7 +134,7 @@
 
 	<!--headings < -->
 
-	
+
 
 
 </default-semantic>
