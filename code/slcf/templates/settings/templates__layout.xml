@@ -11,18 +11,36 @@
 	xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class"
 	>
 
-	<!-- layout > -->
-	<t:layout>
-		<p:xdocument>
-			<p:wrapper/>
-		</p:xdocument>
-	</t:layout>
+    <!-- layout > -->
+    <t:layout>
+	<p:xdocument>
+	    <p:wrapper/>
+	</p:xdocument>
+    </t:layout>
 
-	<t:wrapper>
-		<b:wrapper>
-			<p:header/>
-			<p:main/>
-		</b:wrapper>
-	</t:wrapper>
-	<!-- layout < -->
+    <t:page>
+	<b:wrapper>
+	    <p:header/>
+	    <p:page-layout/>
+	</b:wrapper>
+    </t:page>
+
+    <!-- layout < -->
+
+    <!-- main > -->
+    <t:page-layout>
+	<b:page-layout>
+	    <p:breadcrumbs />
+	    <p:page-header />
+	    <p:page-content />
+	</b:page-layout>
+    </t:page-layout>
+
+    <t:page-content>
+	<b:page-content>
+	    <p:content />
+	</b:page-content>
+    </t:page-content>
+
+    <!-- main < -->
 </templates>

@@ -18,7 +18,6 @@
 			<p:auth />
 			<p:nav />
 			<p:header-search />
-			<p:breadcrumbs />
 		</b:header>
 	</t:header>
 
@@ -215,61 +214,6 @@
 		</b:form>
 	    </b:section>
 	</t:header-search>
-
-	<t:breadcrumbs>
-	    <b:navigator tag="section">
-		<e:title>Навигатор</e:title>
-		<b:menu>
-		    <m:type val="navigator" />
-		    <e:item>
-			<b:link>
-			    <m:type val="icon" />
-			    <b:ico><m:content val="home" /></b:ico>
-			</b:link>
-		    </e:item>
-		    <e:item>
-			<b:link>
-			    <m:type val="icon" />
-			    <b:ico><m:content val="main-category" /></b:ico>
-			</b:link>
-		    </e:item>
-		    <e:item>
-			<b:link>
-			    <m:type val="icon" />
-			    <b:ico><m:content val="tnemes" /></b:ico>
-			</b:link>
-		    </e:item>
-		    <e:item>
-			<b:link>
-			    <m:type val="icon" />
-			    <b:ico><m:content val="tags" /></b:ico>
-			</b:link>
-		    </e:item>
-		    <e:item>
-			<b:link>
-			    <m:type val="icon" />
-			    <b:ico><m:content val="date" /></b:ico>
-			</b:link>
-		    </e:item>
-		    <e:item>
-			<b:link>
-			    Кошки
-			</b:link>
-		    </e:item>
-		    <e:item>
-			<b:link>
-			    Вопросы
-			</b:link>
-		    </e:item>
-		    <e:item>
-			<b:link>
-			    Темы
-			</b:link>
-		    </e:item>
-		</b:menu>
-	    </b:navigator>
-	</t:breadcrumbs>
-
 
 	<!-- header < -->
 
