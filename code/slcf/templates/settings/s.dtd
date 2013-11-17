@@ -1,6 +1,6 @@
 <!ENTITY nbsp "&#160;">
 <!ENTITY copy "&#151;">
-<!ENTITY styles_version "production">
+<!ENTITY styles_version "dev">
 <!ENTITY user_status "guest">
 <!ENTITY block-namespace "http://slcf/templates/settings/bem-scheme/block">
 <!ENTITY element-namespace "http://slcf/templates/settings/bem-scheme/element">
