@@ -1,14 +1,12 @@
 /* theme > */
 @color-body-bg:#e4e6e5;
 @color-body-text:#4b5962;
-
 @color-link:#0042af;
 
 
-
 /* Fonts */
-@font-family-base:Arial, Tahoma, sans-serif;
-@font-family-narrow:Arial, Tahoma, sans-serif;
+@font-family-base: 'PTSansRegular', Arial, Tahoma, sans-serif;
+@font-family-narrow:'PTSansNarrowRegular', ArialNarrow, Arial, Tahoma, sans-serif;
 
 
 
@@ -16,12 +14,66 @@
 
 @bg-icons:url(../images/bg/icons.png);
 
-
 /* forms > */
 
 /* forms < */
 
 
-/* rules < */
+/* mixin < */
 
-/* rules > */
+.ellipsis {
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+
+@box-width:50px;
+
+.box_size(@height:@box-width, @width:@box-width ) {
+    height:@height;
+    width:@width;
+}
+
+.opacity(@opacity: 0.5) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+  filter: ~"alpha(opacity=@{opperc})";
+}
+
+/* mixin > */
+
+
+
+
+/*box-color-styles */
+
+@blue :#1e319d;
+@blue-inverse: #354bc3;
+@red-light :#e15b5c;
+@red-dark :#ae4f63;
+
+.bg-style(@color,@color-hover, @text-color) {
+    (~".bg-style_@{color}") {
+        background-color: @@color;
+	color:@text-color;
+        &:hover {
+            background-color: @color-hover;
+        }
+    }
+}
+
+
+.bg-style("blue", #354bc3, #ffffff);
+.bg-style("blue-inverse", #1e319d, #ffffff);
+.bg-style("red-light", #cf5a5b, #ffffff);
+.bg-style("red-dark", #9c4859, #ffffff);
+
+

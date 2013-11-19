@@ -17,7 +17,7 @@
 
     <script src="js/jquery-1.10.0.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
-    
+
 
     <!--[if lte IE 8 ]>
         <link rel="stylesheet" media="screen" href="css/styles_ie.css" />
@@ -32,36 +32,37 @@
     <div class="wrapper">
 	<header class="header">
 
-	    <div class="logo"> <!--logo -->
-		<a href="index.html">
-		    <img src="images/logo.png" alt="AskZoo" title="AskZoo" />
-		</a>
-		<sub class="logo__slogan">
-		    <span class="version">beta 0.1</span> Животные во всех подробностях
-		</sub>
-	    </div> <!-- /logo -->
+	    <div class="row">
+		<div class="logo"> <!--logo -->
+		    <a class="link logo__link" href="index.html">
+			<img class="logo__image" src="images/logo.png" alt="AskZoo" title="AskZoo" />
+		    </a>
+		    <sub class="logo__slogan">
+			<span class="version">beta 0.1</span> Животные во всех подробностях
+		    </sub>
+		</div> <!-- /logo -->
 
 
-	    <div class="auth"> <!--auth -->
-		<div class="auth__section">
-		    <span class="userpic">
-			<a href="#" class="link">
-			    <img src="images/content/user1.png" alt="UserName" title="UserName" />
-			</a>
-		    </span>
-		</div>
-		<div class="auth__section">
-		    <div class="box box_size_small box_content_messages">345</div>
-		</div>
-		<div class="auth__section">
-		    <div class="box box_size_small box_content_write-guide"><i class="ico ico_content_write-guide"></i></div>
-		</div>
-	    </div> <!-- /auth -->
-
+		<div class="auth"> <!--auth -->
+		    <div class="auth__section">
+			<span class="userpic box_base">
+			    <a href="#" class="userpic__link">
+				<img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName" />
+			    </a>
+			</span>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_blue-inverse">345</a>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_red-light"><i class="ico ico_content_write-guide"></i></a>
+		    </div>
+		</div> <!-- /auth -->
+	    </div>
 
 	    <nav class="nav"> <!-- nav -->
 		<div class="nav__item nav__item_type_active-category">
-		    <img src="images/content/cat-category.png" alt="" title="" />
+		    <img class="active-category__image" src="images/content/category-img.png" alt="" title="" />
 		    <strong class="menu-item-title">
 			кошки
 			<small class="counter">3452</small>
@@ -294,13 +295,14 @@
 			<aside class="aside">
 			    <h3 class="aside__header">
 				<a href="#" class="link">
-				    <span class="userpic">
+				    <span class="userpic box_base">
 					<img src="images/content/user2.png" alt="UserName" title="UserName" />
 				    </span>
 				    Эксперт раздела &laquo;питание&raquo;
 				</a>
 			    </h3>
 			    <div class="aside__content">
+				<img class="aside__thumbnail" src="images/content/aside1.png" alt="" title="" />
 				<ul class="guides-list">
 				    <li class="guides-list__item">
 					<a href="#" class="link">
@@ -341,12 +343,13 @@
 			<aside class="aside">
 			    <h3 class="aside__header">
 				<a href="#" class="link">
-				    <span class="userpic">
+				    <span class="userpic box_base">
 					<img src="images/content/user3.png" alt="UserName" title="UserName" />
 				    </span>
 				    Эксперт раздела &laquo;Балинез&raquo;
 				</a>
 			    </h3>
+			    <img class="aside__thumbnail" src="images/content/aside2.png" alt="" title="" />
 			    <div class="aside__content">
 				<ul class="guides-list">
 				    <li class="guides-list__item">

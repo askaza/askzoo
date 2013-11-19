@@ -1,5 +1,6 @@
-@import 'constants.less';
 @import 'reset.less';
+@import 'fonts.less';
+@import 'constants.less';
 @import 'layout.less';
 @import 'icons.less';
 @import 'forms.less';
@@ -8,7 +9,9 @@
 
 /* clearing > */
 .clearfix:after ,
-.b-header-top {
+.nav:after,
+.header:after,
+.row:after {
 	content:"";
 	clear:both;
 	display:block;
