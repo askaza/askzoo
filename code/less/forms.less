@@ -1,0 +1,83 @@
+form,
+input,
+textarea,
+select {
+    color: @color-body-text;
+    font-family:@font-family-base;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.fieldset {
+    position:relative;
+}
+
+
+
+
+
+
+
+/* buttons < */
+
+.btn {
+    color:#fff;
+    cursor: pointer;
+    height: 27px;
+    display: inline-block;
+    font-size:14px;
+    vertical-align: top;
+    line-height: 26px;
+    position:relative;
+    text-decoration: none;
+    white-space: nowrap;
+
+    .btn__in {
+	color:#fff;
+	.opacity(0.6);
+	cursor: pointer;
+	height: 100%;
+	line-height: 26px;
+	display: inline-block;
+	padding:0 20%;
+	vertical-align: top;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+    }
+
+    .ico {
+	position: absolute;
+	top:8px;
+	left:8px;
+    }
+
+}
+@-moz-document url-prefix() {
+    input[type="submit"],
+    input[type="button"] {
+	padding-top:4% !important;
+    }
+}
+input[type="submit"],
+input[type="button"] {
+    cursor: pointer;
+}
+.btn_icon {
+    .btn__in {
+	padding-left:27px;
+    }
+}
+
+    .btnset_right {
+	margin-left: 0 !important;
+	text-align: right;
+    }
+
+    .btnset_center {
+	margin-left: 0 !important;
+	text-align: center;
+    }
+
+/* buttons > */

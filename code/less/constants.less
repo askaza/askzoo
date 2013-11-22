@@ -6,6 +6,7 @@
 
 /* Fonts */
 @font-family-base: 'PTSansRegular', Arial, Tahoma, sans-serif;
+@font-family-base-italic: 'PTSansItalic', Arial, Tahoma, sans-serif;
 @font-family-narrow:'PTSansNarrowRegular', ArialNarrow, Arial, Tahoma, sans-serif;
 
 
@@ -31,11 +32,16 @@
 }
 
 
-@box-width:50px;
-
-.box_size(@height:@box-width, @width:@box-width ) {
-    height:@height;
-    width:@width;
+// Placeholder text
+.placeholder(@color) {
+  &:-moz-placeholder            { color: @color; } // Firefox 4-18
+  &::-moz-placeholder           { color: @color; } // Firefox 19+
+  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+.transition(@transition) {
+  -webkit-transition: @transition;
+          transition: @transition;
 }
 
 .opacity(@opacity: 0.5) {
@@ -48,6 +54,15 @@
   filter: ~"alpha(opacity=@{opperc})";
 }
 
+
+@box-width:50px;
+
+.box_size(@height:@box-width, @width:@box-width ) {
+    height:@height;
+    width:@width;
+}
+
+
 /* mixin > */
 
 
@@ -59,11 +74,14 @@
 @blue-inverse: #354bc3;
 @red-light :#e15b5c;
 @red-dark :#ae4f63;
+@gray-dark: #4b5962;
 
 .bg-style(@color,@color-hover, @text-color) {
     (~".bg-style_@{color}") {
         background-color: @@color;
 	color:@text-color;
+	.transition(background 0.2s ease);
+
         &:hover {
             background-color: @color-hover;
         }
@@ -75,5 +93,6 @@
 .bg-style("blue-inverse", #1e319d, #ffffff);
 .bg-style("red-light", #cf5a5b, #ffffff);
 .bg-style("red-dark", #9c4859, #ffffff);
+.bg-style("gray-dark", #4b5962, #ffffff);
 
 
