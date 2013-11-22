@@ -59,6 +59,7 @@
 
 .box_size(@height:@box-width, @width:@box-width ) {
     height:@height;
+    line-height: @height + 2;
     width:@width;
 }
 
@@ -75,6 +76,7 @@
 @red-light :#e15b5c;
 @red-dark :#ae4f63;
 @gray-dark: #4b5962;
+@gray-light:#bdc2c8;
 
 .bg-style(@color,@color-hover, @text-color) {
     (~".bg-style_@{color}") {
@@ -84,6 +86,7 @@
 
         &:hover {
             background-color: @color-hover;
+	    color:#fff;
         }
     }
 }
@@ -94,5 +97,6 @@
 .bg-style("red-light", #cf5a5b, #ffffff);
 .bg-style("red-dark", #9c4859, #ffffff);
 .bg-style("gray-dark", #4b5962, #ffffff);
+.bg-style("gray-light", #00b88a, #67727a);
 
 

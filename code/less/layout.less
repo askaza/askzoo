@@ -86,7 +86,10 @@ h2, h3 { font-size:21px;}
 .columns-layout {
     position: relative;
 }
-
+.page-layout {
+    padding-bottom: 40px;
+    position: relative;
+}
 .main {
     float: left;
     width:690px;
@@ -121,10 +124,10 @@ h2, h3 { font-size:21px;}
     .logo__slogan {
 	color:#4b5962;
 	font:14px @font-family-narrow;
-	position:absolute;
-	left:100%;
-	top:-5px;
+	left: 108%;
+	position: absolute;
 	text-transform: uppercase;
+	top: -4px;
 	white-space: nowrap;
 
 	.version {
@@ -159,15 +162,15 @@ h2, h3 { font-size:21px;}
 .nav {
     clear: both;
 
-    .menu-item-title {
+    .menu-item-title {	
 	color:#fff;
-	margin:0 15px;
+	cursor:pointer;
+	font-weight:normal;
+	font-size:19px;
+	margin:0 18px;
 	position: relative;
 	.opacity(0.8);
-	font-weight:normal;
-	font:19px;
 	text-transform: uppercase;
-	cursor:pointer;
 
 	.counter {
 	    color:#aeaeae;
@@ -182,13 +185,14 @@ h2, h3 { font-size:21px;}
 	overflow:hidden;
 
 	& > .menu-item-title {
-	    bottom:15px;
+	    bottom:10px;
 	    left:0;
 	    position:absolute;
 
 	    .counter {
+		font-size:16px;
 		position:absolute;
-		top:-20px;
+		top:-21px;
 		left:0;
 	    }
 	}
@@ -204,11 +208,12 @@ h2, h3 { font-size:21px;}
 
 
 	    & > .menu-item-title {
-		bottom:15px;
+		bottom:10px;
 		left:0;
 		position:absolute;
 
 		.counter {
+		    font-size:16px;
 		    position:absolute;
 		    top:-20px;
 		    left:0;
@@ -251,7 +256,7 @@ h2, h3 { font-size:21px;}
 		border-width: 0 0 10px 10px;
 		border-color: transparent transparent #ffffff transparent;
 		position: absolute;
-		bottom:15px;
+		bottom:17px;
 		right:15px;
 		.opacity(0.5);
 	    }
@@ -283,7 +288,7 @@ h2, h3 { font-size:21px;}
 	& > .menu__link {
 
 	    .menu-item-title {
-		height:140px;
+		height:147px;
 		display: table-cell;
 		margin:0;
 		vertical-align: middle;
@@ -297,21 +302,33 @@ h2, h3 { font-size:21px;}
     }
 
     .menu_sub  {
-	display: none;
+	display: none;	
 	overflow:hidden;
 	width:390px;
+	
+	.menu__item {
+	    float:left;
+	    margin:0;
+	}
 
 	.menu__link {
 	    display:inline-block;
 	    height:50px;
-	    line-height: 52px;
+	    line-height: 54px;
 	    .transition(background 0.2s ease);
 
 	    &:hover {
 		background: #4258d0;
 	    }
 	}
+	.menu__item_active  {
+	    .menu__link {
+		background: #4258d0;
+	    }
+	}
 	.menu-item-title {
+	     font-size: 15px;
+	     margin:  0 16px;
 	    .opacity(0.44);
 	}
 	.counter {
@@ -349,17 +366,19 @@ h2, h3 { font-size:21px;}
 		border-width: 0 0 10px 10px;
 		border-color: transparent transparent #ffffff transparent;
 		position: absolute;
-		bottom:15px;
-		right:15px;
+		bottom:10px;
+		right:13px;
 		.opacity(0.5);
 	    }
 
 	    & > .menu-item-title {
-		bottom:15px;
-		left:0;
-		position:absolute;
+		bottom: 8px;
+		left: 0;
+		margin: 0 16px;
+		position: absolute;
 
 		.counter {
+		    font-size:16px;
 		    position:absolute;
 		    top:-20px;
 		    left:0;
@@ -371,7 +390,7 @@ h2, h3 { font-size:21px;}
 	    background:@blue;
 	}
     }
-    .menu__item_active {
+   & > .menu__item_active {
 	background:@blue;
 	.menu_sub  {
 	    display: block;
@@ -392,7 +411,7 @@ h2, h3 { font-size:21px;}
 
     & > .menu__item {
 	display:inline;
-	margin-right:14px;
+	margin-right:10px;
     }
     .menu__link {
 	text-decoration: none;
@@ -407,7 +426,7 @@ h2, h3 { font-size:21px;}
     }
 
     .counter {
-	margin-left: 4px;
+	margin-left: 2px;
 	font:15px @font-family-narrow;
     }
 
@@ -422,8 +441,8 @@ h2, h3 { font-size:21px;}
     height:70px;
 
     .field_type_search {
-	background:@bg-icons no-repeat -60px 13px;
-	font:30px/30px @font-family-narrow;
+	background:@bg-icons no-repeat -61px 16px;
+	font:30px/40px @font-family-narrow;
 	height:30px;
 	padding:20px 10px 20px 80px;
 	width:55%;
@@ -435,9 +454,12 @@ h2, h3 { font-size:21px;}
 	top:0;
 	height:100%;
 	position:absolute;
+	text-align: center;
+	width:100px;
 
 	.btn__in {
 	    font-size:19px;
+	    line-height: 70px;
 	}
     }
 
@@ -445,7 +467,7 @@ h2, h3 { font-size:21px;}
 	color:#dddddd;
 	font:24px/30px @font-family-base-italic;
 	position:absolute;
-	right: 130px;
+	right: 120px;
 	top: 21px;
     }
 }
