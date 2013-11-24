@@ -33,12 +33,13 @@
 
 
 // Placeholder text
-.placeholder(@color) {
+.placeholder(@color:#000000) {
   &:-moz-placeholder            { color: @color; } // Firefox 4-18
   &::-moz-placeholder           { color: @color; } // Firefox 19+
   &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
   &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
 }
+
 .transition(@transition) {
   -webkit-transition: @transition;
           transition: @transition;
@@ -77,6 +78,7 @@
 @red-dark :#ae4f63;
 @gray-dark: #4b5962;
 @gray-light:#bdc2c8;
+@green:#2ec19c;
 
 .bg-style(@color,@color-hover, @text-color) {
     (~".bg-style_@{color}") {
@@ -98,5 +100,6 @@
 .bg-style("red-dark", #9c4859, #ffffff);
 .bg-style("gray-dark", #4b5962, #ffffff);
 .bg-style("gray-light", #00b88a, #67727a);
+.bg-style("green", @green, #ffffff);
 
 

@@ -1,50 +1,26 @@
-function tooltipInit() {
-	$.each($('.b-tooltip-parent'), function() {
-		var tooltip = $(this).find('.b-tooltip');
-		var link = $(this).find('.b-link');
-		$(this).mouseover(function(e) {
-			tooltip.show();
-			tooltip.css({
-				'left':0,
-				'margin-left': - (tooltip.outerWidth()/2 - link.outerWidth()/2) + 'px'
-			})
-			stopEvent(e);
-		});
-		$(this).mouseout(function(e) {
-			tooltip.hide();
-			stopEvent(e);
-		});
-	})
-}
-function stopEvent(e) {
-	if( e.preventDefault ) {
-		e.preventDefault();
-	} else {
-		e.returnValue = false;
-	}
-	e.stopPropagation();
-}
+$(function() {
 
-function descriptionExpand() {
-	var description = $('#description');
-	var expander = $('#description_expander');
-	var descriptionHeight = $('#description .b-text-block').height();
-	var shortHeight = '390px';
-	description.height(shortHeight);
-	expander.click(function () {
-		if(description.hasClass('expanded')) {
-			description.animate({height:shortHeight},1000, function() {
-				expander.text('Ещё...');
-			}).removeClass('expanded');
+// Tabs
 
-		} else {
-			description.animate({height:descriptionHeight},1000, function() {
-				expander.text('Свернуть');
-			}).addClass('expanded');
-		}
+	$('.tabs-title').on('click', '.tabs-title__item:not(.tabs-title__item_current)', function() {
+		$(this).addClass('tabs-title__item_current').siblings().removeClass('tabs-title__item_current')
+			.parents('.tabs').find('.tab-content').eq($(this).index()).fadeIn(150).siblings('.tab-content').hide();
 	});
-}
 
-$(window).ready(function(){
-	tooltipInit();
-})
+	var tabIndex = window.location.hash.replace('#tab','')-1;
+	if (tabIndex != -1) $('.tabs-title .tabs-title__item').eq(tabIndex).click();
+
+	$('.tabs-title__item a[href*=#tab]').click(function() {
+		var tabIndex = $(this).attr('href').replace(/(.*)#tab/, '')-1;
+		$('.tabs-title__item .tabs-title__item').eq(tabIndex).click();
+	});
+
+
+	    $('.accordion-arrow').click(function() {
+		$(this).parents('.accordion').find('.standard-element__content').slideToggle();
+		$(this).find('.ico').toggleClass('ico_content_arrow-up');
+	    });
+
+
+});
+

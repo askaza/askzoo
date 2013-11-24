@@ -1,0 +1,427 @@
+<!doctype html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>AskZoo</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+
+    <meta name="viewport" content="width=device-width" />
+
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/jquery-1.10.0.min.js"></script>
+    <script src="js/jquery.carouFredSel-6.2.1.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script>
+	$(document).ready(function() {
+
+	    // Using custom configuration
+	    $(".advice-list").carouFredSel({
+		items: 1,
+		auto : false,
+		next : ".next-advice",
+
+		items   : {
+		    height:94,
+		    width:630,
+		},
+
+		scroll: {
+		    items: 1,
+		    duration: 1000
+		}
+	    });
+
+	    $('input[type="checkbox"], input[type="radio"], input[type="file"], select').styler();
+	});
+
+    </script>
+
+
+    <!--[if lte IE 8 ]>
+        <link rel="stylesheet" media="screen" href="css/styles_ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+    <div class="wrapper">
+	<header class="header">
+
+	    <div class="row">
+		<div class="logo"> <!--logo -->
+		    <a class="link logo__link" href="index.html">
+			<img class="logo__image" src="images/logo.png" alt="AskZoo" title="AskZoo" />
+		    </a>
+		    <sub class="logo__slogan">
+			<span class="version">beta 0.1</span> Животные во всех подробностях
+		    </sub>
+		</div> <!-- /logo -->
+
+
+		<div class="auth"> <!--auth -->
+		    <div class="auth__section">
+			<span class="userpic box_base">
+			    <a href="#" class="userpic__link">
+				<img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName" />
+			    </a>
+			</span>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_blue-inverse">345</a>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_red-light"><i class="ico ico_content_write-guide"></i></a>
+		    </div>
+		</div> <!-- /auth -->
+	    </div>
+
+	    <nav class="nav"> <!-- nav -->
+		<div class="nav__item nav__item_type_active-category">
+		    <img class="active-category__image" src="images/content/category-img.png" alt="" title="" />
+		    <strong class="menu-item-title">
+			кошки
+			<small class="counter">3452</small>
+		    </strong>
+		    <a href="#" class="link box_base bg-style_blue-inverse category-changer">
+			<i class="ico ico_content_arrow-next"></i>
+		    </a>
+		</div>
+		<div class="nav__item nav__item_type_shelter">
+		    <a href="#" class="link menu__link">
+			<strong class="menu-item-title">
+			    приюты
+			    <small class="counter">352</small>
+			</strong>
+		    </a>
+		</div>
+		<div class="nav__item nav__item_type_sections">
+		    <ul class="menu menu__main">
+			<li class="menu__item menu__item_active">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    вопросы
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item menu__item_active">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    темы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    эксперты
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    породы
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="menu__item">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    гайды
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    темы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    эксперты
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    заявки
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="menu__item">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    фото
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    чемпионы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    питомники
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    породы
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+		    </ul>
+
+		</div>
+		<div class="nav__item nav__item_type_category-action">
+		    <a href="#" class="link menu__link">
+			<strong class="menu-item-title">
+			    задать вопрос
+			</strong>
+		    </a>
+		</div>
+	    </nav> <!-- /nav -->
+
+	    <section class="search"> <!-- search -->
+		<form action="#" method="post" class="form form_search-header">
+		    <fieldset class="fieldset">
+			<input type="text" class="field field_type_text field_type_search" placeholder="Что Вы ищете?" />
+			<span class="btn btn_search bg-style_blue"><input class="btn__in" type="submit" value="Найти"/></span>
+			<span class="search-results">Найдено 1231</span>
+		    </fieldset>
+		</form>
+	    </section> <!-- /search -->
+
+	</header>
+
+	<div class="page-layout">	 <!-- page-layout  -->
+
+	    <section class="navigator"> <!-- navigator  -->
+		<span class="navigator__title">Навигатор</span>
+		<ul class="menu menu_breadcrumbs">
+		    <li class="menu__item menu__item_active">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_home"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_main-category"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_themes"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_tags"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_date"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">кошки </a><i class="ico ico_content_remove"></i>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">вопросы </a><i class="ico ico_content_remove"></i>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">темы </a><i class="ico ico_content_remove"></i>
+		    </li>
+		</ul>
+	    </section> <!-- / navigator  -->
+
+
+	    <section class="page-content"> <!-- page-content -->
+		<section class="form-header"> <!-- form-header -->
+		    <div class="category-action">
+			    <strong class="menu-item-title">
+				задать вопрос
+			    </strong>
+		    </div>
+		    <div class="advice-carousel"> <!-- advice-carousel -->
+			<span class="next-advice"><i class="ico ico_content_arrow-next"></i></span>
+			<ul class="advice-list">
+			    <li class="advice-list__item">
+				<div class="advice-text">
+				   <h5> Правило №1 </h5>
+				    Тема сообщения длиной до 50 символов — идеальный способ привлечь внимание
+				    экспертов. Не стоит тратить эти драгоценные символы на фразы вроде «Помогите мне,
+				    пожалуйста!» (не говоря уже о «ПОМОГИТЕ!!!!!»).
+				    Используйте отведённое место для максимально точного описания проблемы.
+				</div>
+			    </li>
+			    <li class="advice-list__item">
+				<div class="advice-text">
+				  <h5>  Правило №2</h5>
+
+				    Формулировка вопроса имеет большое значение. Пишите понятным языком, соблюдая
+				    правила орфографии и лексики. Если вы не хотите морочить себе этим голову, эксперты
+				    не захотят морочить голову себе, уделяя внимание таким вопросам.  Не ПИШИТЕ ВСЁ
+				    В ВЕРХНЕМ РЕГИСТРЕ, — это воспринимается как крик и считается грубостью.
+				</div>
+			    </li>
+			    <li class="advice-list__item">
+				<div class="advice-text">
+				   <h5> Правило №3</h5>
+				    Бесполезно сообщать врачам своё мнение о причинах проблемы (если ваши диагностические теории настолько значимы,
+				    надо ли обращаться за помощью к другим?). Поэтому убедитесь, что вы
+				    сообщаете фактические симптомы происходящего, желательно в хронологическом порядке,
+				    а не свои интерпретации и теории.
+				</div>
+			    </li>
+			    <li class="advice-list__item">
+				<div class="advice-text">
+				   <h5> Правило №4</h5>
+				    Не просите людей отвечать вам на личный адрес электронной почты. Мы считаем,
+				    что решение проблемы должно быть публичным. Первая попытка найти ответ может
+				    и должна быть исправлена, если кто-то более знающий заметит, что этот ответ неполный или некорректный.
+				</div>
+			    </li>
+			    <li class="advice-list__item">
+				<div class="advice-text">
+				   <h5> Правило №5</h5>
+				    Будьте вежливы. Используйте фразы «Спасибо», «Заранее благодарен»
+				    или «Спасибо за Ваше понимание». Дайте понять, что вы благодарны людям,
+				    бесплатно посвящающим вам своё время.
+				</div>
+			    </li>
+			    <li class="advice-list__item">
+				<div class="advice-text">
+				  <h5>  Правило №6</h5>
+				    Не ставьте «Срочно!» в заголовках вопросов. Упоминание о срочности зачастую
+				    контрпродуктивно: большинство опускают такие сообщения как эгоистические попытки
+				    привлечь к себе особое внимание. Если вы сообщите о проблеме толково и вежливо,
+				    эксперты скорее заинтересуются в быстром ответе именно на ваш вопрос.
+				</div>
+			    </li>
+			</ul>
+
+		    </div> <!-- / advice-carousel -->
+
+		</section> <!-- /form-header -->
+		<div class="columns-layout">
+
+
+
+			<section class="form-box">
+			    <form class="form" action="#" method="post">
+				<fieldset class="fieldset">
+				    <ul class="form-fields">
+					<li class="form-fields__item">
+					    <label class="field-label">Кошка или собака</label>
+					    <div class="form-field">
+						<ul class="form-fields form-fields_inline">
+						    <li class="form-fields__item">
+							<label class="form-field form-field_radio">
+							    <input type="radio" class="field field_type_radio" name="animal"/>
+							    Кошка
+							</label>
+						    </li>
+						    <li class="form-fields__item">
+							<label class="form-field form-field_radio">
+							    <input type="radio" class="field field_type_radio" name="animal"/>
+							    Собака
+							</label>
+						    </li>
+						</ul>
+					    </div>
+					</li>
+					<li class="form-fields__item">
+					    <label class="field-label">О чем пойдет речь?</label>
+					    <div class="form-field">
+						<select class="field field_type_select">
+						    <option>Выберите раздел</option>
+						    <option>Питание</option>
+						    <option>Уход и содержание</option>
+						    <option>Болезни</option>
+						    <option>Вязка</option>
+						</select>
+					    </div>
+					    <div class="form-field">
+						<input type="text" class="field field_type_text" placeholder="Введите 4 тэга через запятую"/>
+						<small class="form-hint">Можно больше, но не меньше. Пример: здоровье, течка, поведение, гормоны.
+						    Название раздела не повторяйте.</small>
+					    </div>
+					</li>
+					<li class="form-fields__item">
+					    <label class="field-label">Краткий загововок</label>
+					    <div class="form-field">
+						<input type="text" class="field field_type_text" placeholder="Тема"/>
+					    </div>
+					</li>
+					<li class="form-fields__item">
+					    <label class="field-label">Опишите ситуацию</label>
+					    <div class="form-field">
+						<textarea class="field field_type_textarea" placeholder="Тема"></textarea>
+					    </div>
+					</li>
+					<li class="form-fields__item">
+					    <label class="field-label">Приложите файлы?</label>
+					    <div class="form-field">
+						<input type="file" class="field field_type_file"/>
+						<span class="field_type_file-text">Выберите файлы из своего профиля</span>
+						<small class="form-hint"><a href="#" class="link">Добавить еще один файл</a></small>
+					    </div>
+					</li>
+					<li class="form-fields__item">
+					    <div class="form-field">
+						<img src="images/code.png" alt="" title="" />
+						<input type="text" class="field field_type_text field_type_capcha" placeholder="Код на картинке"/>
+					    </div>
+					</li>
+					<li class="form-fields__item">
+					    <label class="form-field form-field_radio">
+						<input type="radio" class="field field_type_radio" name="animal"/>
+						Я прочел <a href="#" class="link">Правила общения</a> и готов им следовать
+					    </label>
+					</li>
+				    </ul>
+				</fieldset>
+				<div class="btnset">
+				    <span class="btn btn_search bg-style_green"><input class="btn__in" type="submit" value="Отправить"/></span>
+				</div>
+			    </form>
+			</section>
+
+
+		</div>
+	    </section> <!-- / page-content -->
+	</div> <!-- / page-layout  -->
+    </div>
+</body>
+</html>
