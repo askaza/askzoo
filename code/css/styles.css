@@ -865,16 +865,39 @@ textarea,
 select {
   color: #4b5962;
   font-family: 'PTSansRegular', Arial, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 21px;
 }
-.field {
+.field_type_text {
   background: #fff;
-  padding: 15px;
+  border: 1px solid #fff;
+  padding: 14px;
   height: 20px;
+  width: 574px;
+}
+.field_type_text:focus {
+  border-color: #2ec19c;
 }
 .field_type_textarea {
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 14px;
+  height: 115px;
   resize: none;
+  width: 574px;
+}
+.field_type_textarea:focus {
+  border-color: #2ec19c;
+}
+.field_type_select {
+  background: #d9dbdc;
+  border: 1px solid #d9dbdc;
+  padding: 14px;
+  height: 20px;
+  width: 574px;
+}
+.field_type_select:focus {
+  border-color: #2ec19c;
 }
 .fieldset {
   position: relative;
@@ -891,14 +914,19 @@ select {
   clear: both;
   display: block;
   letter-spacing: normal;
+  margin-bottom: 36px;
+}
+.form-fields__item > .form-field {
+  margin-left: 240px;
+  margin-bottom: 16px;
 }
 .field-label {
-  color: #666666;
-  font-size: 14px;
-  position: relative;
-  padding-right: 10px;
-  margin-right: 9px;
-  letter-spacing: normal;
+  color: #313131;
+  font-size: 21px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 225px;
 }
 .form-fields_inline .form-fields__item {
   display: inline-block;
@@ -936,26 +964,46 @@ select {
   background-size: 9px 7px;
 }
 /* selectbox < */
-.selectbox {
+.jq-selectbox {
+  cursor: pointer;
   position: relative;
-  cursor: pointer;
 }
-.selectbox__dropdown {
+.jq-selectbox__dropdown {
   background: #fff;
-  display: none;
-  top: 37px;
-  position: absolute;
+  padding: 15px 1px;
+  margin-left: -15px;
+  top: 50px;
   width: 100%;
-  z-index: 20;
 }
-.field_selectbox {
-  cursor: pointer;
+.jq-selectbox__select-text {
+  max-width: 540px;
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   display: block;
+}
+.jq-selectbox__trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  height: 50px;
+  line-height: 52px;
+  width: 50px;
+}
+.jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+  background: url(../images/bg/icons.png) no-repeat -18px -286px;
+  display: inline-block;
+  height: 11px;
+  width: 18px;
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+  filter: alpha(opacity=30);
 }
 /* selectbox > */
 /* buttons < */
@@ -1893,7 +1941,12 @@ input[type="button"] {
   margin-bottom: 5px;
 }
 /* form header > */
-/* profiles > */
+/* form box < */
+.form-box {
+  background: #f2f3f2;
+  padding: 50px 55px;
+}
+/* form box > */
 /* clearing > */
 .clearfix:after,
 .nav:after,

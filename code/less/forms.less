@@ -4,22 +4,50 @@ textarea,
 select {
     color: @color-body-text;
     font-family:@font-family-base;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 21px;
 }
 
 
 .field {
-    background: #fff;
-    padding:15px;
-    height:20px;
+
 }
 .field_type_text {
+    background: #fff;
+    border:1px solid #fff;
+    padding:14px;
+    height:20px;
+    width:574px;
 
+    &:focus {
+	border-color: @green;
+    }
 }
 
+
 .field_type_textarea {
+    border:1px solid #fff;
+    background: #fff;
+    padding:14px;
+    height:115px;
     resize:none;
+    width:574px;
+
+      &:focus {
+	border-color: @green;
+    }
+}
+
+.field_type_select {
+    background:#d9dbdc;
+    border:1px solid #d9dbdc;
+    padding:14px;
+    height:20px;
+    width:574px;
+
+    &:focus {
+	border-color: @green;
+    }
 }
 
 
@@ -39,15 +67,21 @@ select {
     clear: both;
     display:block;
     letter-spacing: normal;
+    margin-bottom:36px;
+
+    & > .form-field {
+	margin-left:240px;
+	margin-bottom:16px;
+    }
 }
 
 .field-label {
-    color:#666666;
-    font-size:14px;
-    position:relative;
-    padding-right:10px;
-    margin-right: 9px;
-    letter-spacing: normal;
+    color:#313131;
+    font-size:21px;
+    position:absolute;
+    left:0;
+    top:10px;
+    width:225px;
 }
 
 .form-fields_inline {
@@ -96,23 +130,38 @@ select {
 
 /* selectbox < */
 
-.selectbox {
+.jq-selectbox {
+    cursor:pointer;
     position:relative;
-    cursor: pointer;
-}
-.selectbox__dropdown {
-    background: #fff;
-    display: none;
-    top:37px;
-    position: absolute;
-    width:100%;
-    z-index: 20;
 }
 
-.field_selectbox {
-    cursor:pointer;
+.jq-selectbox__dropdown {
+    background: #fff;
+    padding:15px 1px;
+    margin-left:-15px;
+    top:50px;
+    width:100%;
+}
+.jq-selectbox__select-text {
+    max-width:540px;
     .ellipsis;
 }
+.jq-selectbox__trigger {
+    position:absolute;
+    top:0;
+    right:0;
+    text-align:center;
+    .box_size();
+
+    .jq-selectbox__trigger-arrow {
+	background:@bg-icons no-repeat -18px -286px;
+	display:inline-block;
+	height:11px;
+	width:18px;
+	.opacity(0.3);
+    }
+}
+
 /* selectbox > */
 
 
