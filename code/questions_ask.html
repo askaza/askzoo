@@ -39,7 +39,10 @@
 		}
 	    });
 
-	    $('input[type="checkbox"], input[type="radio"], input[type="file"], select').styler();
+	    $('input[type="checkbox"], input[type="radio"], input[type="file"], select').styler({
+		browseText:'Выбрать',
+		filePlaceholder:'Выберите файлы из своего профиля'
+	    });
 	});
 
     </script>
@@ -370,11 +373,14 @@
 						    <option>Уход и содержание</option>
 						    <option>Болезни</option>
 						    <option>Вязка</option>
+						    <option>Прививки</option>
+						    <option>Промышленные корма</option>
+						    <option>Котята в доме</option>
 						</select>
 					    </div>
 					    <div class="form-field">
 						<input type="text" class="field field_type_text" placeholder="Введите 4 тэга через запятую"/>
-						<small class="form-hint">Можно больше, но не меньше. Пример: здоровье, течка, поведение, гормоны.
+						<small class="form-hint">Можно больше, но не меньше. Пример: здоровье, течка, поведение, гормоны.<br />
 						    Название раздела не повторяйте.</small>
 					    </div>
 					</li>
@@ -387,27 +393,26 @@
 					<li class="form-fields__item">
 					    <label class="field-label">Опишите ситуацию</label>
 					    <div class="form-field">
-						<textarea class="field field_type_textarea" placeholder="Тема"></textarea>
+						<textarea class="field field_type_textarea" placeholder="Сообщение"></textarea>
 					    </div>
 					</li>
 					<li class="form-fields__item">
 					    <label class="field-label">Приложите файлы?</label>
-					    <div class="form-field">
+					    <div class="form-field form-field-file">
 						<input type="file" class="field field_type_file"/>
-						<span class="field_type_file-text">Выберите файлы из своего профиля</span>
 						<small class="form-hint"><a href="#" class="link">Добавить еще один файл</a></small>
 					    </div>
 					</li>
 					<li class="form-fields__item">
-					    <div class="form-field">
-						<img src="images/code.png" alt="" title="" />
+					    <div class="form-field form-field-capcha">
+						<img class="capcha-image" src="images/content/code.png" alt="" title="" />
 						<input type="text" class="field field_type_text field_type_capcha" placeholder="Код на картинке"/>
 					    </div>
 					</li>
 					<li class="form-fields__item">
 
 					    <label class="form-field form-field-checkbox">
-						<input type="radio" class="field field_type_radio" name="animal"/>
+						<input type="checkbox" class="field field_type_checkbox" name="animal"/>
 						Я прочел <a href="#" class="link">Правила общения</a> и готов им следовать
 					    </label>
 					</li>

@@ -930,38 +930,110 @@ select {
 }
 .form-fields_inline .form-fields__item {
   display: inline-block;
-  margin: 0;
+  margin: 0 0 0 10px;
   vertical-align: top;
 }
 .form-fields_inline .form-fields__item:first-child {
   margin: 0;
 }
+.form-fields_inline .form-field-radio,
+.form-fields_inline .form-field-checkbox {
+  margin: 11px 0;
+  width: 120px;
+}
+.form-hint {
+  color: #abb0b3;
+  display: block;
+  font-family: 'PTSansNarrowRegular', ArialNarrow, Arial, Tahoma, sans-serif;
+  margin-top: 6px;
+}
+.form-hint .link {
+  color: #4b5962;
+  font: 17px 'PTSansRegular', Arial, Tahoma, sans-serif;
+}
 /* custom-field < */
 /* checkbox < */
-.form-field_chbox {
+.form-field-checkbox {
   position: relative;
-  padding-left: 21px;
-  line-height: 14px;
-  font-size: 14px;
+  padding-left: 33px;
+  line-height: 20px;
+  display: block;
 }
-.field-box_radio {
-  position: relative;
-  padding-left: 21px;
-  line-height: 14px;
-  font-size: 14px;
+.form-field-checkbox:hover .jq-checkbox {
+  background-position: 0 -24px;
 }
-.jq-checkbox {
-  background: #fff;
-  width: 11px;
-  height: 11px;
-  border: 1px solid #cecece;
+.form-field-checkbox .jq-checkbox {
+  background: url(../images/bg/forms.png) no-repeat 0 0;
+  width: 20px;
+  height: 20px;
   left: 0;
-  top: 1px;
-  position: absolute;
+  top: 0;
+  position: absolute !important;
 }
-.jq-checkbox.checked {
-  background: #ffffff url(../images/icons/check.svg) no-repeat 50% 50%;
-  background-size: 9px 7px;
+.form-field-checkbox .jq-checkbox.checked {
+  background-position: 0 -48px;
+}
+.form-field-radio {
+  position: relative;
+  padding-left: 33px;
+  line-height: 20px;
+  cursor: pointer;
+  display: block;
+}
+.form-field-radio:hover .jq-radio {
+  background-position: -26px -24px;
+}
+.form-field-radio .jq-radio {
+  background: url(../images/bg/forms.png) no-repeat -26px 0;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  position: absolute !important;
+}
+.form-field-radio .jq-radio.checked {
+  background-position: -26px -48px;
+}
+.form-field-file {
+  position: relative;
+}
+.form-field-file .jq-file {
+  vertical-align: middle;
+  margin-right: 20px;
+  width: 100%;
+}
+.form-field-file .jq-file .jq-file__browse {
+  background: #4b5962;
+  color: #d4d6d8;
+  cursor: pointer;
+  display: block;
+  line-height: 35px;
+  font-family: 'PTSansNarrowRegular', ArialNarrow, Arial, Tahoma, sans-serif;
+  height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 86px;
+}
+.form-field-file .field_type_file-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.form-field-file .jq-file__name {
+  height: 36px;
+  line-height: 35px;
+  left: 105px;
+  position: absolute;
+  width: 498px;
+  z-index: 20;
+}
+.capcha-image {
+  float: left;
+  margin-right: 12px;
+  width: 150px;
+}
+.field_type_capcha {
+  overflow: hidden;
+  width: 413px;
 }
 /* selectbox < */
 .jq-selectbox {
@@ -969,11 +1041,23 @@ select {
   position: relative;
 }
 .jq-selectbox__dropdown {
-  background: #fff;
-  padding: 15px 1px;
+  background: #D9DBDC;
+  padding: 0 1px;
   margin-left: -15px;
+  max-height: 250px;
   top: 50px;
   width: 100%;
+}
+.jq-selectbox__dropdown li {
+  background: #D9DBDC;
+  cursor: pointer;
+  padding: 14px;
+  border-bottom: 1px solid #F2F3F2;
+}
+.jq-selectbox__dropdown li.sel,
+.jq-selectbox__dropdown li.selected,
+.jq-selectbox__dropdown li:hover {
+  background: #e4e6e5;
 }
 .jq-selectbox__select-text {
   max-width: 540px;
@@ -1048,6 +1132,9 @@ input[type="button"] {
 }
 .btn_icon .btn__in {
   padding-left: 27px;
+}
+.btnset {
+  margin-left: 240px;
 }
 .btnset_right {
   margin-left: 0 !important;
@@ -1403,6 +1490,7 @@ input[type="button"] {
 .users-top .users-top__item .username {
   color: #6e7c7d;
   font-size: 19px;
+  font-family: 'PTSansNarrowRegular', ArialNarrow, Arial, Tahoma, sans-serif;
   padding-left: 15px;
   line-height: 35px;
   text-overflow: ellipsis;
@@ -1561,6 +1649,9 @@ input[type="button"] {
   margin: 20px 60px 45px 0;
   text-decoration: none;
 }
+.standard-element_question .question-text:hover {
+  color: #000;
+}
 .standard-element__title_date {
   padding-right: 60px;
 }
@@ -1583,6 +1674,22 @@ input[type="button"] {
 }
 .short-gallery .gallery-carousel {
   overflow: hidden;
+  position: relative;
+}
+.short-gallery .gallery-carousel .caroufredsel_wrapper {
+  width: 100% !important;
+}
+.short-gallery .next-advice {
+  height: 50px;
+  line-height: 52px;
+  width: 50px;
+  cursor: pointer;
+  text-align: center;
+  top: 0;
+  right: 0;
+  background: #8d979d;
+  position: absolute;
+  z-index: 2;
 }
 .short-gallery_experts {
   background: #e4e6e5;
@@ -1604,7 +1711,7 @@ input[type="button"] {
   color: #4b5962;
   text-align: center;
   text-decoration: none;
-  width: 115px;
+  width: 100px;
 }
 .short-gallery_breeder .short-gallery__title:hover {
   background: #cf5a5b;
@@ -1812,12 +1919,13 @@ input[type="button"] {
 .accordion .standard-element__header {
   border-bottom: 1px solid #EBECEE;
 }
-.accordion .standard-element__header:hover .standard-element__title {
-  color: #343434;
-  cursor: default;
-}
 .accordion .standard-element__content {
-  display: none;
+  position: absolute;
+  visibility: hidden;
+}
+.accordion .standard-element__content_visible {
+  position: relative;
+  visibility: visible;
 }
 .accordion-arrow {
   cursor: pointer;
@@ -1825,9 +1933,6 @@ input[type="button"] {
   top: 0;
   right: 0;
   z-index: 10;
-}
-.accordion-arrow:hover {
-  background: #f6f6f6;
 }
 /* accordion > */
 /* profiles < */
@@ -1837,13 +1942,13 @@ input[type="button"] {
 .profile-list > .standard-element__header:hover .standard-element__title {
   color: #343434;
 }
-.standard-element_profile .standard-element__header:hover .box_comments {
+.standard-element_profile .standard-element__header .box_comments:hover {
   background: #354bc3;
 }
-.standard-element_profile .standard-element__header:hover .box_guide {
+.standard-element_profile .standard-element__header .box_guide:hover {
   background: #e15b5c;
 }
-.standard-element_profile .standard-element__header:hover .box_plus {
+.standard-element_profile .standard-element__header .box_plus:hover {
   background: #00b88a;
 }
 .standard-element_profile .standard-element__header .standard-element__link {

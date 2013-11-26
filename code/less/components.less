@@ -386,6 +386,7 @@
 	.username {
 	    color:#6e7c7d;
 	    font-size:19px;
+	    font-family:@font-family-narrow;
 	    padding-left:15px;
 	    line-height:35px;
 	    .ellipsis;
@@ -575,6 +576,10 @@
 	display:block;
 	margin:20px 60px 45px 0;
 	text-decoration:none;
+
+	&:hover {
+	    color:#000;
+	}
     }
 }
 
@@ -604,6 +609,22 @@
 
     .gallery-carousel {
 	overflow:hidden;
+	position:relative;
+
+	.caroufredsel_wrapper {
+	    width:100% !important;
+	}
+    }
+
+    .next-advice {
+	.box_size();
+	cursor:pointer;
+	text-align:center;
+	top:0;
+	right:0;
+	background:#8d979d;
+	position:absolute;
+	z-index:2;
     }
 }
 
@@ -630,7 +651,7 @@
 	color:#4b5962;
 	text-align:center;
 	text-decoration:none;
-	width:115px;
+	width:100px;
 
 	&:hover {
 	    background:#cf5a5b;
@@ -894,17 +915,14 @@
 .accordion {
     .standard-element__header {
 	border-bottom:1px solid #EBECEE;
-
-	&:hover {
-
-	    .standard-element__title {
-		color:#343434;
-		cursor:default;
-	    }
-	}
     }
     .standard-element__content {
-	display:none;
+	position:absolute;
+	visibility:hidden;
+    }
+    .standard-element__content_visible {
+	position:relative;
+	visibility:visible;
     }
 }
 
@@ -914,10 +932,6 @@
     top:0;
     right:0;
     z-index:10;
-
-    &:hover {
-	background:#f6f6f6;
-    }
 }
 
 
@@ -938,18 +952,17 @@
 
 .standard-element_profile {
     .standard-element__header {
-	&:hover {
 
-	    .box_comments {
-		background:#354bc3;
-	    }
-	    .box_guide {
-		background:#e15b5c;
-	    }
-	    .box_plus {
-		background:#00b88a;
-	    }
+	.box_comments:hover {
+	    background:#354bc3;
 	}
+	.box_guide:hover {
+	    background:#e15b5c;
+	}
+	.box_plus:hover {
+	    background:#00b88a;
+	}
+
 	.standard-element__link {
 	    margin-right:150px;
 	}
@@ -1069,6 +1082,7 @@
 }
 
 /* form box > */
+
 
 
 
