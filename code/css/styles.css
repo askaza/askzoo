@@ -2109,6 +2109,47 @@ input[type="button"] {
   left: 0;
   left: 20px;
 }
+.standard-element_guide .profile {
+  height: auto;
+  min-height: 85px;
+  padding-bottom: 45px;
+}
+.standard-element_guide .date {
+  color: #4b5962;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  filter: alpha(opacity=50);
+}
+.standard-element_style_gray-dark .standard-element__content {
+  background: #e4e6e5;
+}
+.standard-element_style_gray-dark .standard-element__content:hover {
+  color: #1f2b33;
+}
+.standard-element_style_gray-light .standard-element__content {
+  background: #f2f3f2;
+}
+.standard-element_style_gray-light .standard-element__content:hover {
+  color: #000;
+}
+.standard-element_style_blue .standard-element__content {
+  background: #9ddae0;
+}
+.standard-element_style_blue .standard-element__content:hover {
+  color: #15464b;
+}
+.standard-element_style_green .standard-element__content {
+  background: #bde26e;
+}
+.standard-element_style_green .standard-element__content:hover {
+  color: #395107;
+}
+.section-illustrate {
+  display: block;
+}
 /* form header < */
 .form-header {
   background: #2ec19c;

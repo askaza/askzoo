@@ -1,0 +1,475 @@
+<!doctype html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>AskZoo</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+
+    <meta name="viewport" content="width=device-width" />
+
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/jquery-1.10.0.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+
+
+    <!--[if lte IE 8 ]>
+        <link rel="stylesheet" media="screen" href="css/styles_ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+    <div class="wrapper">
+	<header class="header">
+
+	    <div class="row">
+		<div class="logo"> <!--logo -->
+		    <a class="link logo__link" href="index.html">
+			<img class="logo__image" src="images/logo.png" alt="AskZoo" title="AskZoo" />
+		    </a>
+		    <sub class="logo__slogan">
+			<span class="version">beta 0.1</span> Животные во всех подробностях
+		    </sub>
+		</div> <!-- /logo -->
+
+
+		<div class="auth"> <!--auth -->
+		    <div class="auth__section">
+			<span class="userpic box_base">
+			    <a href="#" class="userpic__link">
+				<img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName" />
+			    </a>
+			</span>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_blue-inverse">345</a>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_red-light"><i class="ico ico_content_write-guide"></i></a>
+		    </div>
+		</div> <!-- /auth -->
+	    </div>
+
+	    <nav class="nav"> <!-- nav -->
+		<div class="nav__item nav__item_type_active-category">
+		    <img class="active-category__image" src="images/content/category-img.png" alt="" title="" />
+		    <strong class="menu-item-title">
+			кошки
+			<small class="counter">3452</small>
+		    </strong>
+		    <a href="#" class="link box_base bg-style_blue-inverse category-changer">
+			<i class="ico ico_content_arrow-next"></i>
+		    </a>
+		</div>
+		<div class="nav__item nav__item_type_shelter">
+		    <a href="#" class="link menu__link">
+			<strong class="menu-item-title">
+			    приюты
+			    <small class="counter">352</small>
+			</strong>
+		    </a>
+		</div>
+		<div class="nav__item nav__item_type_sections">
+		    <ul class="menu menu__main">
+			<li class="menu__item menu__item_active">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    вопросы
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    темы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    эксперты
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    породы
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="menu__item">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    гайды
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    темы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    эксперты
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    заявки
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="menu__item">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    фото
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    чемпионы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    питомники
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    породы
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+		    </ul>
+
+		</div>
+		<div class="nav__item nav__item_type_category-action">
+		    <a href="#" class="link menu__link">
+			<strong class="menu-item-title">
+			    задать вопрос
+			</strong>
+		    </a>
+		</div>
+	    </nav> <!-- /nav -->
+
+	    <section class="search"> <!-- search -->
+		<form action="#" method="post" class="form form_search-header">
+		    <fieldset class="fieldset">
+			<input type="text" class="field field_type_text field_type_search" placeholder="Что Вы ищете?" />
+			<span class="btn btn_search bg-style_blue"><input class="btn__in" type="submit" value="Найти"/></span>
+			<span class="search-results">Найдено 1231</span>
+		    </fieldset>
+		</form>
+	    </section> <!-- /search -->
+
+	</header>
+
+	<div class="page-layout">	 <!-- page-layout  -->
+
+	    <section class="navigator"> <!-- navigator  -->
+		<span class="navigator__title">Навигатор</span>
+		<ul class="menu menu_breadcrumbs">
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_home"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_main-category"></i></a>
+		    </li>
+		    <li class="menu__item menu__item_active">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_themes"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_tags"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_date"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">кошки </a><i class="ico ico_content_remove"></i>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">вопросы </a><i class="ico ico_content_remove"></i>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">темы </a><i class="ico ico_content_remove"></i>
+		    </li>
+		</ul>
+	    </section> <!-- / navigator  -->
+
+
+	    <header class="page-header"> <!-- page-header -->
+		<h1 class="page-title">Гайды 145</h1>
+		<ul class="menu menu_sub">
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">
+			    <strong class="menu-item-title">
+				сегодня
+				<small class="counter">51</small>
+			    </strong>
+			</a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">
+			    <strong class="menu-item-title">
+				на неделе
+				<small class="counter">52</small>
+			    </strong>
+			</a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">
+			    <strong class="menu-item-title">
+				за месяц
+				<small class="counter">90</small>
+			    </strong>
+			</a>
+		    </li>
+		</ul>
+	    </header> <!-- / page-header -->
+
+	    <section class="page-content"> <!-- page-content -->
+		<div class="columns-layout">
+
+		    <div class="main"> <!-- main -->
+			<img src="images/content/article1.png" alt="Гайды" title="Гайды" class="section-illustrate" />
+
+			<div class="standard-element standard-element_profile standard-element_guide standard-element_style_green">
+			    <div class="standard-element__header standard-element__header_white">
+				 <a class="standard-element__link" href="#">
+					<span class="standard-element__title">Кастрация и стерилизация самок</span>
+				    </a>
+				<div class="action-menu">
+				    <a class="link" href="#">
+					<span class="userpic box box_base">
+					    <img title="UserName" alt="UserName" src="images/content/user5.png" class="userpic__image">
+					</span>
+				    </a>
+				    <a href="#" class="box box_base box_comments">
+					<i class="ico ico_content_comments-s"></i> 89
+				    </a>
+				    <a href="#" class="box box_base box_plus">
+					+23
+				    </a>
+				</div>
+			    </div>
+			    <div class="standard-element__content">
+				<div class="profile">
+				    <p>Часто бывает так, что владельцы, доведенные до отчаянья ужасными запахами и постоянными нечистотами,
+				    просто не выдерживают. Кто-то отказывается от своих питомцев, выгоняя их на улицу, а кто-то и вовсе
+				    требует усыпить кота. Парадоксально, что кошки платят такую высокую цену лишь за то, что хозяин не
+				    понял природу их поведения и не попытался понять ее. Самой распространенной причиной того, что
+				    питомец иногда делает «свои дела» мимо туалета, является его повышенная чистоплотность.</p>
+				    <small class="date">12 мар</small>
+				</div>
+			    </div>
+			</div>
+			<div class="standard-element standard-element_profile standard-element_guide standard-element_style_gray-dark">
+
+			    <div class="standard-element__header standard-element__header_white">
+				<a class="standard-element__link" href="#">
+				    <span class="standard-element__title">Младенец и кошка</span>
+				</a>
+				<div class="action-menu">
+				    <a class="link" href="#">
+					<span class="userpic box box_base">
+					    <img title="UserName" alt="UserName" src="images/content/user7.png" class="userpic__image">
+					</span>
+				    </a>
+
+				    <a href="#" class="box box_base box_comments">
+					<i class="ico ico_content_comments-s"></i> 89
+				    </a>
+				    <a href="#" class="box box_base box_plus">
+					+23
+				    </a>
+				</div>
+			    </div>
+			    <div class="standard-element__content">
+				<a class="standard-element__thumbnail" href="#">
+				    <img title="Младенец и кошка" alt="Младенец и кошка" src="images/content/expert1.png" class="standard-element__image">
+				</a>
+				<div class="profile">
+				   <p> Личность кошки – сложная конструкция, которая веками вызывала вопросы у человека.</p>
+				    <small class="date">12 мар</small>
+				</div>
+
+			    </div>
+			</div>
+			<div class="standard-element standard-element_profile standard-element_guide standard-element_style_gray-dark">
+
+			    <div class="standard-element__header standard-element__header_white">
+				<a class="standard-element__link" href="#">
+				    <span class="standard-element__title">Младенец и кошка</span>
+				</a>
+				<div class="action-menu">
+				    <a class="link" href="#">
+					<span class="userpic box box_base">
+					    <img title="UserName" alt="UserName" src="images/content/user8.png" class="userpic__image">
+					</span>
+				    </a>
+
+				    <a href="#" class="box box_base box_comments">
+					<i class="ico ico_content_comments-s"></i> 89
+				    </a>
+				    <a href="#" class="box box_base box_plus">
+					+23
+				    </a>
+				</div>
+			    </div>
+			    <div class="standard-element__content">
+				<a class="standard-element__thumbnail" href="#">
+				    <img title="Младенец и кошка" alt="Младенец и кошка" src="images/content/article-thumb2.png" class="standard-element__image">
+				</a>
+				<div class="profile">
+				   <p> Если животное начинает справлять нужду мимо туалета или
+				       выбирает для таких процессов не предназначенные для этого помещения.</p>
+				    <small class="date">12 мар</small>
+				</div>
+
+			    </div>
+			</div>
+			<div class="standard-element standard-element_profile standard-element_guide standard-element_style_blue">
+
+			    <div class="standard-element__header standard-element__header_white">
+				<a class="standard-element__link" href="#">
+				    <span class="standard-element__title">Как выбрать средство от блох и клещей для котят?</span>
+				</a>
+				<div class="action-menu">
+				    <a class="link" href="#">
+					<span class="userpic box box_base">
+					    <img title="UserName" alt="UserName" src="images/content/user4.png" class="userpic__image">
+					</span>
+				    </a>
+
+				    <a href="#" class="box box_base box_comments">
+					<i class="ico ico_content_comments-s"></i> 89
+				    </a>
+				    <a href="#" class="box box_base box_plus">
+					+23
+				    </a>
+				</div>
+			    </div>
+			    <div class="standard-element__content">
+				<a class="standard-element__thumbnail" href="#">
+				    <img title="Младенец и кошка" alt="Младенец и кошка" src="images/content/article-thumb1.png" class="standard-element__image">
+				</a>
+				<div class="profile">
+				   <p> Если животное начинает справлять нужду мимо туалета или
+				       выбирает для таких процессов не предназначенные для этого помещения.</p>
+				    <small class="date">12 мар</small>
+				</div>
+
+			    </div>
+			</div>
+
+			<div class="standard-element standard-element_profile standard-element_guide standard-element_style_gray-light">
+
+			    <div class="standard-element__header standard-element__header_white">
+				<a class="standard-element__link" href="#">
+				    <span class="standard-element__title">Как правильно кормить котят в возрасте от 3 до 12 месяцев?</span>
+				</a>
+				<div class="action-menu">
+				    <a class="link" href="#">
+					<span class="userpic box box_base">
+					    <img title="UserName" alt="UserName" src="images/content/user4.png" class="userpic__image">
+					</span>
+				    </a>
+
+				    <a href="#" class="box box_base box_comments">
+					<i class="ico ico_content_comments-s"></i> 89
+				    </a>
+				    <a href="#" class="box box_base box_plus">
+					+23
+				    </a>
+				</div>
+			    </div>
+			    <div class="standard-element__content">
+				<div class="profile">
+				   <p> Подскажите, пожалуйста после глистогонного препарата у котенка должны выходить глисты .
+				       Давали "Диронет"суспензию, по инструкции. После дачи препарата глистов больше не видела.. Заранее спасибо за ответ!.</p>
+				    <small class="date">12 мар</small>
+				</div>
+
+			    </div>
+			</div>
+
+
+		    </div> <!-- / main -->
+		    <div class="sidebar"> <!-- sidebar -->
+		<aside class="aside aside_style_blue">
+			    <h3 class="aside__header">
+				<a href="#" class="link">
+				    <span class="userpic box box_base">
+					<img class="userpic__image" src="images/content/user5.png" alt="UserName" title="UserName" />
+				    </span>
+				    <span class="username">Валентин Петрович</span>
+				</a>
+			    </h3>
+
+			    <div class="aside__content">
+				<img class="aside__thumbnail" src="images/content/aside3.png" alt="" title="" />
+				<article class="article-short">
+				    <h4><a href="#" class="link">Что такое собственные доходы бюджета?</a></h4>
+				    <div class="text-block">
+					Гайд по современным противовоспалительным и сосудосуживающим препаратам
+				    </div>
+				</article>
+				<div class="action-menu">
+				    <a href="#" class="box box_base box_comments">
+					<i class="ico ico_content_comments-s"></i> 89
+				    </a>
+				    <a href="#" class="box box_base box_plus">
+					+ 12
+				    </a>
+				</div>
+			    </div>
+			</aside>
+		    </div> <!-- / sidebar -->
+		</div>
+	    </section> <!-- / page-content -->
+	</div> <!-- / page-layout  -->
+    </div>
+</body>
+</html>
