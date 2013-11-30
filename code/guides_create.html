@@ -20,7 +20,6 @@
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/common.js"></script>
 
-
     <script>
 	$(document).ready(function() {
 
@@ -112,7 +111,7 @@
 		</div>
 		<div class="nav__item nav__item_type_sections">
 		    <ul class="menu menu__main">
-			<li class="menu__item menu__item_active">
+			<li class="menu__item">
 			    <a href="#" class="link menu__link">
 				<strong class="menu-item-title">
 				    вопросы
@@ -146,7 +145,7 @@
 				</li>
 			    </ul>
 			</li>
-			<li class="menu__item">
+			<li class="menu__item menu__item_active">
 			    <a href="#" class="link menu__link">
 				<strong class="menu-item-title">
 				    гайды
@@ -220,7 +219,7 @@
 		<div class="nav__item nav__item_type_category-action">
 		    <a href="#" class="link menu__link">
 			<strong class="menu-item-title">
-			    задать вопрос
+			    создать гайд
 			</strong>
 		    </a>
 		</div>
@@ -275,7 +274,7 @@
 		<section class="form-header"> <!-- form-header -->
 		    <div class="category-action">
 			    <strong class="menu-item-title">
-				задать вопрос
+				создать гайд
 			    </strong>
 		    </div>
 		    <div class="advice-carousel"> <!-- advice-carousel -->
@@ -348,7 +347,7 @@
 				<fieldset class="fieldset">
 				    <ul class="form-fields">
 					<li class="form-fields__item">
-					    <label class="field-label">Кошка или собака</label>
+					    <label class="field-label">Какой раздел?</label>
 					    <div class="form-field">
 						<ul class="form-fields form-fields_inline">
 						    <li class="form-fields__item">
@@ -363,11 +362,17 @@
 							    Собака
 							</label>
 						    </li>
+						    <li class="form-fields__item">
+							<label class="form-field-radio">
+							    <input type="radio" class="field field_type_radio" name="animal"/>
+							    Неважно
+							</label>
+						    </li>
 						</ul>
 					    </div>
 					</li>
 					<li class="form-fields__item">
-					    <label class="field-label">О чем пойдет речь?</label>
+					    <label class="field-label">Выберите раздел</label>
 					    <div class="form-field">
 						<select class="field field_type_select">
 						    <option>Выберите раздел</option>
@@ -381,25 +386,45 @@
 						</select>
 					    </div>
 					    <div class="form-field">
+						<select class="field field_type_select">
+						    <option>Выберите породу</option>
+						    <option>Американский бобтейл длинношёрстный</option>
+						    <option>Американская жесткошёрстная</option>
+						    <option>Бенгальская</option>
+						    <option>Гималайская кошка</option>
+						    <option>Девон рекс</option>
+						    <option>Донской сфинкс</option>
+						    <option>Египетская мау</option>
+						</select>
+					    </div>
+					    <div class="form-field">
 						<input type="text" class="field field_type_text" placeholder="Введите 4 тэга через запятую"/>
 						<small class="form-hint">Можно больше, но не меньше. Пример: здоровье, течка, поведение, гормоны.<br />
 						    Название раздела не повторяйте.</small>
 					    </div>
 					</li>
+
 					<li class="form-fields__item">
-					    <label class="field-label">Краткий загововок</label>
+					    <label class="field-label">Тема</label>
 					    <div class="form-field">
-						<input type="text" class="field field_type_text field_state_error" placeholder="Тема"/>
-					    <div class="field-hint">
+						<input type="text" class="field field_type_text" placeholder="Тема"/>
+
+					    </div>
+					</li>
+					<li class="form-fields__item">
+					    <label class="field-label">Вводный текст</label>
+					    <div class="form-field">
+						<textarea class="field field_type_textarea field_type_textarea_short field_state_error" placeholder="Краткое и емкое изложение гайда"></textarea>
+						  <div class="field-hint">
 						<i class="ico ico_content_warning"></i>
 						<span class="field-hint__text">Заполните это поле, пожалуйста</span>
 					    </div>
 					    </div>
 					</li>
 					<li class="form-fields__item">
-					    <label class="field-label">Опишите ситуацию</label>
+					    <label class="field-label">Основная часть</label>
 					    <div class="form-field">
-						<textarea class="field field_type_textarea" placeholder="Сообщение"></textarea>
+						<textarea class="field field_type_textarea" placeholder="Текст"></textarea>
 					    </div>
 					</li>
 					<li class="form-fields__item">
@@ -423,7 +448,7 @@
 
 					    <label class="form-field form-field-checkbox">
 						<input type="checkbox" class="field field_type_checkbox" name="animal"/>
-						Я прочел <a href="#" class="link">Правила общения</a> и готов им следовать
+						Мой текст соответствует <a href="#" class="link">Правилам общения</a>
 					    </label>
 					</li>
 				    </ul>

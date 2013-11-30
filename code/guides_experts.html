@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <script src="js/jquery-1.10.0.min.js"></script>
-    <script src="js/common.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
 
 
@@ -81,7 +80,7 @@
 		</div>
 		<div class="nav__item nav__item_type_sections">
 		    <ul class="menu menu__main">
-			<li class="menu__item menu__item_active">
+			<li class="menu__item">
 			    <a href="#" class="link menu__link">
 				<strong class="menu-item-title">
 				    вопросы
@@ -115,7 +114,7 @@
 				</li>
 			    </ul>
 			</li>
-			<li class="menu__item">
+			<li class="menu__item menu__item_active">
 			    <a href="#" class="link menu__link">
 				<strong class="menu-item-title">
 				    гайды
@@ -189,7 +188,7 @@
 		<div class="nav__item nav__item_type_category-action">
 		    <a href="#" class="link menu__link">
 			<strong class="menu-item-title">
-			    задать вопрос
+			    создать гайд
 			</strong>
 		    </a>
 		</div>
@@ -240,12 +239,12 @@
 	    </section> <!-- / navigator  -->
 
 	    <header class="page-header"> <!-- page-header -->
-		<h1 class="page-title">Породные форумы 95</h1>
+		<h1 class="page-title">Эксперты 82</h1>
 		<ul class="menu menu_sub">
 		    <li class="menu__item">
 			<a href="#" class="link menu__link">
 			    <strong class="menu-item-title">
-				абиссинская
+				Сегодня
 				<small class="counter">51</small>
 			    </strong>
 			</a>
@@ -253,7 +252,7 @@
 		    <li class="menu__item">
 			<a href="#" class="link menu__link">
 			    <strong class="menu-item-title">
-				британская
+				Вчера
 				<small class="counter">52</small>
 			    </strong>
 			</a>
@@ -261,7 +260,7 @@
 		    <li class="menu__item">
 			<a href="#" class="link menu__link">
 			    <strong class="menu-item-title">
-				скоттиш-фолд
+				За неделю
 				<small class="counter">90</small>
 			    </strong>
 			</a>
@@ -274,169 +273,138 @@
 
 		    <div class="main"> <!-- main -->
 
-
-			<div class="standard-element profile-list">
-			    <div class="standard-element__header">
-				<span class="box box_base bg-style_blue">4</span>
-				<div class="standard-element__link">
-				    <span class="standard-element__title">Питание</span>
-				</div>
+			<div class="standard-element">
+			    <div class="standard-element__header standard-element__header_white">
+				<span class="box box_base bg-style_red-light"><i class="ico ico_content_pencil"></i>45</span>
+				<span class="userpic box_base">
+				    <a href="#" class="userpic__link">
+					<img class="userpic__image" src="images/content/expert1.png" alt="UserName" title="UserName" height="50" />
+				    </a>
+				</span>
+				<a href="#" class="standard-element__link">
+				    <span class="standard-element__title">Елена Бладохонова</span>
+				</a>
 			    </div>
 			    <div class="standard-element__content">
-				<div class="standard-element standard-element_profile">
-				    <div class="standard-element__header standard-element__header_white">
-					<a href="#" class="standard-element__link">
-					    <span class="standard-element__title">Мария Бладахонова</span>
-					</a>
-					<div class="action-menu">
-					    <a class="box box_base box_comments" href="#">
-						<i class="ico ico_content_comments-s"></i> 89
-					    </a>
-					    <a class="box box_base box_plus" href="#">
-						+23
-					    </a>
-					    <a class="box box_base box_guide" href="#">
-						<i class="ico ico_content_pencil"></i>23
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+74</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Диагноз</span>
+						<small class="date">12 мар</small>
 					    </a>
 					</div>
-				    </div>
-				    <div class="standard-element__content">
-					<a href="#" class="standard-element__thumbnail">
-					    <img class="standard-element__image" src="images/content/expert1.png" alt="Мария Бладахонова" title="Мария Бладахонова" />
-					</a>
-					<div class="profile">
-					    <h5 class="experience">Биолог-заводчик, владелец питомника, врач-перкуссионист</h5>
-					    <div class="work">Питомник бельгийских кошек «HildaBeng», г. Томск
-						Клиника «Реставрация», г. Томск</div>
-					    <small class="date">12 мар</small>
-					</div>
-				    </div>
-				</div>
-				<div class="standard-element standard-element_profile">
-				    <div class="standard-element__header standard-element__header_white">
-					<a href="#" class="standard-element__link">
-					    <span class="standard-element__title">Анатолий Александрович Соляковский</span>
-					</a>
-					<div class="action-menu">
-					    <a class="box box_base box_comments" href="#">
-						<i class="ico ico_content_comments-s"></i> 89
-					    </a>
-					    <a class="box box_base box_plus" href="#">
-						+233
-					    </a>
-					    <a class="box box_base box_guide" href="#">
-						<i class="ico ico_content_pencil"></i>23
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Профилактика - Прививки</span>
+						<small class="date">12 мар</small>
 					    </a>
 					</div>
-				    </div>
-				    <div class="standard-element__content">
-					<a href="#" class="standard-element__thumbnail">
-					    <img class="standard-element__image" src="images/content/expert2.png" alt="Мария Бладахонова" title="Мария Бладахонова" />
-					</a>
-					<div class="profile">
-					    <h5 class="experience">Биолог-перкуссионист</h5>
-					    <div class="work">Питомник бельгийских кошек «HildaBeng», г. Томск</div>
-					    <small class="date">12 мар</small>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+87</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Профессиональные корма</span>
+						<small class="date">12 мар</small>
+					    </a>
 					</div>
-				    </div>
-				</div>
-
+				    </li>
+				</ul>
 			    </div>
 			</div>
 
-			<div class="standard-element profile-list">
-			    <div class="standard-element__header">
-				<span class="box box_base bg-style_blue">1</span>
-				<div class="standard-element__link">
-				    <span class="standard-element__title">Уход и содержание</span>
-				</div>
+			<div class="standard-element">
+			    <div class="standard-element__header standard-element__header_white">
+				<span class="box box_base bg-style_red-light"><i class="ico ico_content_pencil"></i>2</span>
+				<span class="userpic box_base">
+				    <a href="#" class="userpic__link">
+					<img class="userpic__image" src="images/content/expert2.png" alt="UserName" title="UserName" height="50" />
+				    </a>
+				</span>
+				<a href="#" class="standard-element__link">
+				    <span class="standard-element__title">Станислав Курчинский</span>
+				</a>
 			    </div>
 			    <div class="standard-element__content">
-				<div class="standard-element standard-element_profile">
-				    <div class="standard-element__header standard-element__header_white">
-					<a href="#" class="standard-element__link">
-					    <span class="standard-element__title">Мария Бладахонова</span>
-					</a>
-					<div class="action-menu">
-					    <a class="box box_base box_comments" href="#">
-						<i class="ico ico_content_comments-s"></i> 89
-					    </a>
-					    <a class="box box_base box_plus" href="#">
-						+23
-					    </a>
-					    <a class="box box_base box_guide" href="#">
-						<i class="ico ico_content_pencil"></i>23
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+74</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Самая древняя порода кошки на планете - Сфинкс</span>
+						<small class="date">12 мар</small>
 					    </a>
 					</div>
-				    </div>
-				    <div class="standard-element__content">
-					<a href="#" class="standard-element__thumbnail">
-					    <img class="standard-element__image" src="images/content/expert1.png" alt="Мария Бладахонова" title="Мария Бладахонова" />
-					</a>
-					<div class="profile">
-					    <h5 class="experience">Биолог-заводчик, владелец питомника, врач-перкуссионист</h5>
-					    <div class="work">Питомник бельгийских кошек «HildaBeng», г. Томск<br />
-						Клиника «Реставрация», г. Томск</div>
-					    <small class="date">12 мар</small>
-					</div>
-				    </div>
-				</div>
-				<div class="standard-element standard-element_profile">
-				    <div class="standard-element__header standard-element__header_white">
-					<a href="#" class="standard-element__link">
-					    <span class="standard-element__title">Анатолий Александрович Соляковский</span>
-					</a>
-					<div class="action-menu">
-					    <a class="box box_base box_comments" href="#">
-						<i class="ico ico_content_comments-s"></i> 89
-					    </a>
-					    <a class="box box_base box_plus" href="#">
-						+233
-					    </a>
-					    <a class="box box_base box_guide" href="#">
-						<i class="ico ico_content_pencil"></i>23
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Имбридинг</span>
+						<small class="date">12 мар</small>
 					    </a>
 					</div>
-				    </div>
-				    <div class="standard-element__content">
-					<a href="#" class="standard-element__thumbnail">
-					    <img class="standard-element__image" src="images/content/expert2.png" alt="Мария Бладахонова" title="Мария Бладахонова" />
-					</a>
-					<div class="profile">
-					    <h5 class="experience">Биолог-перкуссионист</h5>
-					    <div class="work">Питомник бельгийских кошек «HildaBeng», г. Томск</div>
-					    <small class="date">12 мар</small>
-					</div>
-				    </div>
-				</div>
-				<div class="standard-element standard-element_profile">
-				    <div class="standard-element__header standard-element__header_white">
-					<a href="#" class="standard-element__link">
-					    <span class="standard-element__title">Мармот Маршан</span>
-					</a>
-					<div class="action-menu">
-					    <a class="box box_base box_comments" href="#">
-						<i class="ico ico_content_comments-s"></i> 89
+				    </li>
+				</ul>
+			    </div>
+			</div>
+
+			<div class="standard-element">
+			    <div class="standard-element__header standard-element__header_white">
+				<span class="box box_base bg-style_red-light"><i class="ico ico_content_pencil"></i>2</span>
+				<span class="userpic box_base">
+				    <a href="#" class="userpic__link">
+					<img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName" height="50" />
+				    </a>
+				</span>
+				<a href="#" class="standard-element__link">
+				    <span class="standard-element__title">Мармот Маршан</span>
+				</a>
+			    </div>
+			    <div class="standard-element__content">
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+4</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Устройство ЖКТ кошки</span>
+						<small class="date">12 мар</small>
 					    </a>
-					    <a class="box box_base box_plus" href="#">
-						+233
-					    </a>
-					    <a class="box box_base box_guide" href="#">
-						<i class="ico ico_content_pencil"></i>23
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Рецепты натурального корма</span>
+						<small class="date">30 апр</small>
 					    </a>
 					</div>
-				    </div>
-				    <div class="standard-element__content">
-					<a href="#" class="standard-element__thumbnail">
-					    <img class="standard-element__image" src="images/content/expert2.png" alt="Мария Бладахонова" title="Мария Бладахонова" />
-					</a>
-					<div class="profile">
-					    <h5 class="experience">Биолог-перкуссионист, владелец питомника</h5>
-					    <div class="work">Питомник бельгийских кошек «HildaBeng», <br />г. Томск</div>
-					    <small class="date">12 мар</small>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Витамины: польза или вред</span>
+						<small class="date">12 мар</small>
+					    </a>
 					</div>
-				    </div>
-				</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Имбридинг</span>
+						<small class="date">12 мар</small>
+					    </a>
+					</div>
+				    </li>
+				</ul>
 			    </div>
 			</div>
 
@@ -446,30 +414,29 @@
 
 		    </div> <!-- / main -->
 		    <div class="sidebar"> <!-- sidebar -->
-
-			<aside class="aside article_style_blue">
+			<aside class="aside article_style_green">
 			    <h3 class="aside__header">
-				<a href="#" class="link">
+				<a class="link" href="#">
 				    <span class="userpic box box_base">
-					<img class="userpic__image" src="images/content/user5.png" alt="UserName" title="UserName" />
+					<img title="UserName" alt="UserName" src="images/content/user10.png" class="userpic__image">
+
 				    </span>
 				    <span class="username">Валентин Петрович</span>
 				</a>
 			    </h3>
 
 			    <div class="aside__content">
-				<img class="aside__thumbnail" src="images/content/aside3.png" alt="" title="" />
 				<article class="article-short">
-				    <h4><a href="#" class="link">Что такое собственные доходы бюджета?</a></h4>
+				    <h4><a class="link" href="#">Антибиотики</a></h4>
 				    <div class="text-block">
 					Гайд по современным противовоспалительным и сосудосуживающим препаратам
 				    </div>
 				</article>
 				<div class="action-menu">
-				    <a href="#" class="box box_base">
+				    <a class="box box_base box_comments" href="#">
 					<i class="ico ico_content_comments-s"></i> 89
 				    </a>
-				    <a href="#" class="box box_base">
+				    <a class="box box_base box_plus" href="#">
 					+ 12
 				    </a>
 				</div>

@@ -37,6 +37,9 @@ select {
 	border-color: @green;
     }
 }
+.field_type_textarea_short {
+    height:60px;
+}
 
 .field_type_select {
     background:#fff;
@@ -101,6 +104,12 @@ select {
     }
 }
 
+.form {
+    .link {
+	color:@color-body-text;
+    }
+}
+
 .form-hint {
     color:#abb0b3;
     display:block;
@@ -108,7 +117,6 @@ select {
     margin-top:6px;
 
     .link {
-	color:#4b5962;
 	font:17px @font-family-base;
     }
 }
@@ -352,6 +360,10 @@ input[type="button"] {
 
     .field_type_text {
 	width:560px;
+
+	&:focus {
+	    border-color:#fff;
+	}
     }
 }
 

@@ -1,0 +1,649 @@
+<!doctype html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>AskZoo</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+
+    <meta name="viewport" content="width=device-width" />
+
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/jquery-1.10.0.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+
+
+    <!--[if lte IE 8 ]>
+        <link rel="stylesheet" media="screen" href="css/styles_ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+    <div class="wrapper">
+	<header class="header">
+
+	    <div class="row">
+		<div class="logo"> <!--logo -->
+		    <a class="link logo__link" href="index.html">
+			<img class="logo__image" src="images/logo.png" alt="AskZoo" title="AskZoo" />
+		    </a>
+		    <sub class="logo__slogan">
+			<span class="version">beta 0.1</span> Животные во всех подробностях
+		    </sub>
+		</div> <!-- /logo -->
+
+
+		<div class="auth"> <!--auth -->
+		    <div class="auth__section">
+			<span class="userpic box_base">
+			    <a href="#" class="userpic__link">
+				<img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName" />
+			    </a>
+			</span>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_blue-inverse">345</a>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_red-light"><i class="ico ico_content_write-guide"></i></a>
+		    </div>
+		</div> <!-- /auth -->
+	    </div>
+
+	    <nav class="nav"> <!-- nav -->
+		<div class="nav__item nav__item_type_active-category">
+		    <img class="active-category__image" src="images/content/category-img.png" alt="" title="" />
+		    <strong class="menu-item-title">
+			кошки
+			<small class="counter">3452</small>
+		    </strong>
+		    <a href="#" class="link box_base bg-style_blue-inverse category-changer">
+			<i class="ico ico_content_arrow-next"></i>
+		    </a>
+		</div>
+		<div class="nav__item nav__item_type_shelter">
+		    <a href="#" class="link menu__link">
+			<strong class="menu-item-title">
+			    приюты
+			    <small class="counter">352</small>
+			</strong>
+		    </a>
+		</div>
+		<div class="nav__item nav__item_type_sections">
+		    <ul class="menu menu__main">
+			<li class="menu__item">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    вопросы
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item menu__item_active">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    темы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    эксперты
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    породы
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="menu__item menu__item_active">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    гайды
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    темы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    эксперты
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    заявки
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="menu__item">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    фото
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    чемпионы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    питомники
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    породы
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+		    </ul>
+
+		</div>
+		<div class="nav__item nav__item_type_category-action">
+		    <a href="#" class="link menu__link">
+			<strong class="menu-item-title">
+			   создать гайд
+			</strong>
+		    </a>
+		</div>
+	    </nav> <!-- /nav -->
+
+	    <section class="search"> <!-- search -->
+		<form action="#" method="post" class="form form_search-header">
+		    <fieldset class="fieldset">
+			<input type="text" class="field field_type_text field_type_search" placeholder="Что Вы ищете?" />
+			<span class="btn btn_search bg-style_blue"><input class="btn__in" type="submit" value="Найти"/></span>
+			<span class="search-results">Найдено 1231</span>
+		    </fieldset>
+		</form>
+	    </section> <!-- /search -->
+
+	</header>
+
+	<div class="page-layout">	 <!-- page-layout  -->
+
+	    <section class="navigator"> <!-- navigator  -->
+		<span class="navigator__title">Навигатор</span>
+		<ul class="menu menu_breadcrumbs">
+		    <li class="menu__item menu__item_active">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_home"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_main-category"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_themes"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_tags"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_date"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">кошки </a><i class="ico ico_content_remove"></i>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">вопросы </a><i class="ico ico_content_remove"></i>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">темы </a><i class="ico ico_content_remove"></i>
+		    </li>
+		</ul>
+	    </section> <!-- / navigator  -->
+
+	    <header class="page-header"> <!-- page-header -->
+		<h1 class="page-title">Гайды по темам 76</h1>
+		<ul class="menu menu_sub">
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">
+			    <strong class="menu-item-title">
+				Питание
+				<small class="counter">51</small>
+			    </strong>
+			</a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">
+			    <strong class="menu-item-title">
+				Ветеринария
+				<small class="counter">52</small>
+			    </strong>
+			</a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">
+			    <strong class="menu-item-title">
+				Содержание и уход
+				<small class="counter">90</small>
+			    </strong>
+			</a>
+		    </li>
+		</ul>
+	    </header> <!-- / page-header -->
+
+	    <section class="page-content"> <!-- page-content -->
+		<div class="columns-layout">
+
+		    <div class="main"> <!-- main -->
+
+			<div class="standard-element">
+			    <div class="standard-element__header">
+				<a class="box box_base bg-style_blue" href="#">45</a>
+				<a href="#" class="standard-element__link">
+				    <span class="standard-element__title">Питание</span>
+				</a>
+			    </div>
+			    <div class="standard-element__content">
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+74</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user8.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Диагноз</span>
+						<small class="date">12 мар</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user10.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Профилактика - Прививки</span>
+						<small class="date">12 мар</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+87</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user8.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Профессиональные корма</span>
+						<small class="date">12 мар</small>
+					    </a>
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			</div>
+
+			<div class="standard-element">
+			    <div class="standard-element__header">
+				<a class="box box_base bg-style_blue" href="#">45</a>
+				<a href="#" class="standard-element__link">
+				    <span class="standard-element__title">Уход и содержание</span>
+				</a>
+			    </div>
+			    <div class="standard-element__content">
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user2.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Как часто мыть кошку?</span>
+						<small class="date">7 АПР</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user5.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Уход за шерстью длинношерстных кошек</span>
+						<small class="date">2 ДЕК</small>
+					    </a>
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			</div>
+
+
+
+			<div class="standard-element">
+			    <div class="standard-element__header">
+				<a class="box box_base bg-style_blue" href="#">45</a>
+				<a href="#" class="standard-element__link">
+				    <span class="standard-element__title">Ветеринария</span>
+				</a>
+			    </div>
+			    <div class="standard-element__content">
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user8.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Клиники</span>
+						<small class="date">7 АПР</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user5.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Врачи</span>
+						<small class="date">2 ДЕК</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Анализ при простудных заболеваниях кошек</span>
+						<small class="date">2 ДЕК</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user9.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Анализ при простудных заболеваниях кошек</span>
+						<small class="date">2 ДЕК</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user4.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Анализ при простудных заболеваниях кошек, при кожных болезнях, микоплазмоз,ринотрахеит, лечение и лекарства, дозировка</span>
+						<small class="date">2 ДЕК</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+4</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user4.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Анализ при простудных заболеваниях кошек</span>
+						<small class="date">2 ДЕК</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="box box_base bg-style_gray-light">+23</a>
+					    <span class="userpic box_base">
+						<a href="#" class="userpic__link">
+						    <img class="userpic__image" src="images/content/user9.png" alt="UserName" title="UserName">
+						</a>
+					    </span>
+					    <a href="#" class="link guide__link standard-element__title_date">
+						<span class="guide__title">Ветеринарный паспорт и прививки</span>
+						<small class="date">2 ДЕК</small>
+					    </a>
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			</div>
+
+
+		    </div> <!-- / main -->
+		    <div class="sidebar"> <!-- sidebar -->
+			<aside class="aside">
+			    <h3 class="aside__header bg-style_red-light">
+				<a href="#" class="link">
+				    <span class="userpic box_base">
+					<img src="images/content/user2.png" alt="UserName" title="UserName" />
+				    </span>
+				    <span class="aside__header__text"> Эксперт раздела &laquo;питание&raquo;</span>
+				</a>
+			    </h3>
+			    <div class="aside__content">
+				<img class="aside__thumbnail" src="images/content/aside1.png" alt="" title="" />
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Балинез или балийская кошка</span>
+						<small class="guide__points">+34</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Игрушки для кошек</span>
+						<small class="guide__points">+4</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+
+						<span class="guide__title">Кошка и вода</span>
+						<small class="guide__points">+34</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Как отучить кошку драть обои
+						    и мебель</span>
+						<small class="guide__points">+544</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Какотучитькошкудратьобоиимебель,ковры,шторы,одежду,обувь</span>
+						<small class="guide__points">+544</small>
+					    </a>
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			</aside>
+
+			<aside class="aside">
+			    <h3 class="aside__header bg-style_red-dark">
+				<a href="#" class="link">
+				    <span class="userpic box_base">
+					<img src="images/content/user3.png" alt="UserName" title="UserName" />
+				    </span>
+				    <span class="aside__header__text"> Эксперт раздела &laquo;Балинез&raquo;</span>
+				</a>
+			    </h3>
+			    <img class="aside__thumbnail" src="images/content/aside2.png" alt="" title="" />
+			    <div class="aside__content">
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Балинез – американская мечта</span>
+						<small class="guide__points">+34</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Балийская кошка или балинез</span>
+						<small class="guide__points">+4</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Балийская порода</span>
+						<small class="guide__points">+34</small>
+					    </a>
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			</aside>
+			<aside class="aside">
+			    <h3 class="aside__header bg-style_gray-dark">
+				<a href="#" class="link">
+				    <span class="aside__header__text"> Породы кошек</span>
+				</a>
+			    </h3>
+			    <div class="aside__content">
+				<ul class="selector selector_alphabet">
+				    <li class="selector__item"><a href="#" class="link">А</a></li>
+				    <li class="selector__item"><a href="#" class="link">Б</a></li>
+				    <li class="selector__item"><a href="#" class="link">В</a></li>
+				    <li class="selector__item"><a href="#" class="link">Г</a></li>
+				    <li class="selector__item"><a href="#" class="link">Д</a></li>
+				    <li class="selector__item"><a href="#" class="link">Е</a></li>
+				    <li class="selector__item"><a href="#" class="link">Ж</a></li>
+				    <li class="selector__item selector__item_disabled"><a href="#" class="link">З</a></li>
+				    <li class="selector__item"><a href="#" class="link">И</a></li>
+				    <li class="selector__item"><a href="#" class="link">К</a></li>
+				    <li class="selector__item"><a href="#" class="link">Л</a></li>
+				    <li class="selector__item"><a href="#" class="link">М</a></li>
+				    <li class="selector__item"><a href="#" class="link">Н</a></li>
+				    <li class="selector__item"><a href="#" class="link">О</a></li>
+				    <li class="selector__item"><a href="#" class="link">П</a></li>
+				    <li class="selector__item"><a href="#" class="link">Р</a></li>
+				    <li class="selector__item selector__item_active"><a href="#" class="link">С</a></li>
+				    <li class="selector__item"><a href="#" class="link">Т</a></li>
+				    <li class="selector__item"><a href="#" class="link">У</a></li>
+				    <li class="selector__item"><a href="#" class="link">Ф</a></li>
+				    <li class="selector__item"><a href="#" class="link">Х</a></li>
+				    <li class="selector__item"><a href="#" class="link">Ц</a></li>
+				    <li class="selector__item"><a href="#" class="link">Ч</a></li>
+				    <li class="selector__item"><a href="#" class="link">Ш</a></li>
+				    <li class="selector__item"><a href="#" class="link">Щ</a></li>
+				    <li class="selector__item"><a href="#" class="link">Э</a></li>
+				    <li class="selector__item"><a href="#" class="link">Ю</a></li>
+				    <li class="selector__item"><a href="#" class="link">Я</a></li>
+
+				</ul>
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Сурикаты ушастые</span>
+						<small class="guide__points">+34</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a href="#" class="link guide__link">
+						<span class="guide__title">Саванна</span>
+						<small class="guide__points">+6</small>
+					    </a>
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			</aside>
+		    </div> <!-- / sidebar -->
+		</div>
+	    </section> <!-- / page-content -->
+	</div> <!-- / page-layout  -->
+    </div>
+</body>
+</html>

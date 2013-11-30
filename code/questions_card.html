@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <script src="js/jquery-1.10.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/common.js"></script>
 
@@ -328,52 +329,119 @@
 			    </div>
 			</article>
 
-			<div class="tabs"> <!-- tabs -->
+			<div class="tabs" id="tabs"> <!-- tabs -->
 			    <div class="tabs__header">
 				<ul class="tabs-title">
-				    <li class="tabs-title__item tabs-title__item_marked tabs-title__item_current"><a href="#tab1" class="link"><i class="ico ico_content_guide-s"></i> Гайды</a></li>
+				    <li class="tabs-title__item"><a href="#tab1" class="link bg-style_red-light"><i class="ico ico_content_guide-s"></i> Гайды</a></li>
 				    <li class="tabs-title__item"><a href="#tab2" class="link"><i class="ico ico_content_comments"></i> 3453 Комментариев</a></li>
-				    <li class="tabs-title__item-false"><a href="#" class="link"><i class="ico ico_content_view"></i> 44 Просмотра</a></li>
+				    <li class="tabs-title__item"><a href="#tab3" class="link"><i class="ico ico_content_view"></i> 44 Просмотра</a></li>
 				</ul>
 			    </div>
 			    <div class="tabs__content">
-				<div class="tab-content" style="display: block;"> <!-- tab-content -->
+				<div class="tab-content" id="tab1"> <!-- tab-content -->
 				    <div class="standard-element">
 					<div class="standard-element__header">
 					    <a class="box box_base bg-style_blue" href="#">45</a>
 					    <a href="#" class="standard-element__link">
-						<span class="standard-element__title">Уход и содержание</span>
+						<span class="standard-element__title">Ветеринария</span>
 					    </a>
-					</div>
-					<div class="short-gallery short-gallery_experts">
-					    <label class="short-gallery__title">Эксперты</label>
-					    <div class="gallery-carousel">
-						<ul class="thumbnails">
-						    <li class="thumbnails__item"><a class="link" href="#"><img src="images/content/user8.png" alt="" title="" /></a></li>
-						    <li class="thumbnails__item"><a class="link" href="#"><img src="images/content/user5.png" alt="" title="" /></a></li>
-						    <li class="thumbnails__item"><a class="link" href="#"><img src="images/content/user2.png" alt="" title="" /></a></li>
-						    <li class="thumbnails__item"><a class="link" href="#"><img src="images/content/user1.png" alt="" title="" /></a></li>
-						    <li class="thumbnails__item"><a class="link" href="#"><img src="images/content/user3.png" alt="" title="" /></a></li>
-						    <li class="thumbnails__item"><a class="link" href="#"><img src="images/content/user7.png" alt="" title="" /></a></li>
-						</ul>
-					    </div>
 					</div>
 					<div class="standard-element__content">
 					    <ul class="guides-list">
 						<li class="guides-list__item">
 						    <div class="guide">
-							<a href="#" class="box box_base bg-style_gray-light">23</a>
+							<a href="#" class="box box_base bg-style_gray-light">+23</a>
+							<span class="userpic box_base">
+							    <a href="#" class="userpic__link">
+								<img class="userpic__image" src="images/content/user8.png" alt="UserName" title="UserName">
+							    </a>
+							</span>
 							<a href="#" class="link guide__link standard-element__title_date">
-							    <span class="guide__title">Как часто мыть кошку?</span>
+							    <span class="guide__title">Клиники</span>
 							    <small class="date">7 АПР</small>
 							</a>
 						    </div>
 						</li>
 						<li class="guides-list__item">
 						    <div class="guide">
-							<a href="#" class="box box_base bg-style_gray-light">23</a>
+							<a href="#" class="box box_base bg-style_gray-light">+23</a>
+							<span class="userpic box_base">
+							    <a href="#" class="userpic__link">
+								<img class="userpic__image" src="images/content/user5.png" alt="UserName" title="UserName">
+							    </a>
+							</span>
 							<a href="#" class="link guide__link standard-element__title_date">
-							    <span class="guide__title">Уход за шерстью длинношерстных кошек</span>
+							    <span class="guide__title">Врачи</span>
+							    <small class="date">2 ДЕК</small>
+							</a>
+						    </div>
+						</li>
+						<li class="guides-list__item">
+						    <div class="guide">
+							<a href="#" class="box box_base bg-style_gray-light">+23</a>
+							<span class="userpic box_base">
+							    <a href="#" class="userpic__link">
+								<img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName">
+							    </a>
+							</span>
+							<a href="#" class="link guide__link standard-element__title_date">
+							    <span class="guide__title">Анализ при простудных заболеваниях кошек</span>
+							    <small class="date">2 ДЕК</small>
+							</a>
+						    </div>
+						</li>
+						<li class="guides-list__item">
+						    <div class="guide">
+							<a href="#" class="box box_base bg-style_gray-light">+23</a>
+							<span class="userpic box_base">
+							    <a href="#" class="userpic__link">
+								<img class="userpic__image" src="images/content/user9.png" alt="UserName" title="UserName">
+							    </a>
+							</span>
+							<a href="#" class="link guide__link standard-element__title_date">
+							    <span class="guide__title">Анализ при простудных заболеваниях кошек</span>
+							    <small class="date">2 ДЕК</small>
+							</a>
+						    </div>
+						</li>
+						<li class="guides-list__item">
+						    <div class="guide">
+							<a href="#" class="box box_base bg-style_gray-light">+23</a>
+							<span class="userpic box_base">
+							    <a href="#" class="userpic__link">
+								<img class="userpic__image" src="images/content/user4.png" alt="UserName" title="UserName">
+							    </a>
+							</span>
+							<a href="#" class="link guide__link standard-element__title_date">
+							    <span class="guide__title">Анализ при простудных заболеваниях кошек, при кожных болезнях, микоплазмоз,ринотрахеит, лечение и лекарства, дозировка</span>
+							    <small class="date">2 ДЕК</small>
+							</a>
+						    </div>
+						</li>
+						<li class="guides-list__item">
+						    <div class="guide">
+							<a href="#" class="box box_base bg-style_gray-light">+4</a>
+							<span class="userpic box_base">
+							    <a href="#" class="userpic__link">
+								<img class="userpic__image" src="images/content/user4.png" alt="UserName" title="UserName">
+							    </a>
+							</span>
+							<a href="#" class="link guide__link standard-element__title_date">
+							    <span class="guide__title">Анализ при простудных заболеваниях кошек</span>
+							    <small class="date">2 ДЕК</small>
+							</a>
+						    </div>
+						</li>
+						<li class="guides-list__item">
+						    <div class="guide">
+							<a href="#" class="box box_base bg-style_gray-light">+23</a>
+							<span class="userpic box_base">
+							    <a href="#" class="userpic__link">
+								<img class="userpic__image" src="images/content/user9.png" alt="UserName" title="UserName">
+							    </a>
+							</span>
+							<a href="#" class="link guide__link standard-element__title_date">
+							    <span class="guide__title">Ветеринарный паспорт и прививки</span>
 							    <small class="date">2 ДЕК</small>
 							</a>
 						    </div>
@@ -390,9 +458,9 @@
 					</fieldset>
 				    </form>
 				</div>
-				<div class="tab-content" > <!-- tab-content -->
+				<div class="tab-content" id="tab2"> <!-- tab-content -->
 				    <div class="comments">
-					<ul class="comments-list">
+					<ul class="comments-list"> <!-- comments-list -->
 					    <li class="comments-list__item">
 						<div class="comment comment_expert">
 						    <div class="comment__header">
@@ -411,7 +479,7 @@
 							    <ul class="dropdown-menu">
 								<li class="dropdown-menu__item"><a href="#" class="link">Ответить</a></li>
 								<li class="dropdown-menu__item"><a href="#" class="link">Похоже на рекламу</a></li>
-								<li class="dropdown-menu__item"><a href="#" class="link link_green-like"><i class="ico ico_content_plus-w"></i>Полезный ответ</a></li>
+								<li class="dropdown-menu__item"><span class="link like-box"><i class="ico ico_content_plus-w"></i> <span class="like-box__text">Полезный ответ</span></span></li>
 							    </ul>
 							</div>
 							<a class="box box_base bg-style_green" href="#">45</a>
@@ -511,7 +579,7 @@
 							    <ul class="dropdown-menu">
 								<li class="dropdown-menu__item"><a href="#" class="link">Ответить</a></li>
 								<li class="dropdown-menu__item"><a href="#" class="link">Похоже на рекламу</a></li>
-								<li class="dropdown-menu__item"><a href="#" class="link link_green-like"><i class="ico ico_content_plus-w"></i>Полезный ответ</a></li>
+								<li class="dropdown-menu__item"><span class="link like-box"><i class="ico ico_content_plus-w"></i><span class="like-box__text">Полезный ответ</span></span></li>
 							    </ul>
 							</div>
 							<a class="box box_base bg-style_green" href="#">45</a>
@@ -565,6 +633,60 @@
 					</fieldset>
 				    </form>
 				</div> <!-- / tab-content -->
+				<div class="tab-content" id="tab3"> <!-- tab-content -->
+				    <ul class="guides-list guides-list_requests">
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">3</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Январь</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">33</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Февраль</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">9</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Март</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">11</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Апрель</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">1</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Май</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">8</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Июнь</span>
+						</a>
+					    </div>
+					</li>
+
+
+				    </ul>
+				</div>     <!-- /tab-content -->
 
 			    </div><!-- / tabs content -->
 
@@ -583,7 +705,7 @@
 			    </div>
 			</div>
 
-			<aside class="aside aside_style_red">
+			<aside class="aside article_style_red">
 			    <h3 class="aside__header">
 				<a href="#" class="link">
 				    <span class="userpic box box_base">
@@ -614,7 +736,7 @@
 			</aside>
 
 
-			<aside class="aside aside_style_green">
+			<aside class="aside article_style_green">
 			    <h3 class="aside__header">
 				<a href="#" class="link">
 				    <span class="userpic box box_base">
@@ -643,7 +765,7 @@
 			    </div>
 			</aside>
 
-			<aside class="aside aside_style_blue">
+			<aside class="aside article_style_blue">
 			    <h3 class="aside__header">
 				<a href="#" class="link">
 				    <span class="userpic box box_base">

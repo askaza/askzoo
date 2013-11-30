@@ -1,0 +1,687 @@
+<!doctype html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>AskZoo</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+
+    <meta name="viewport" content="width=device-width" />
+
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/jquery-1.10.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <!--[if lte IE 8 ]>
+        <link rel="stylesheet" media="screen" href="css/styles_ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+    <div class="wrapper">
+	<header class="header">
+
+	    <div class="row">
+		<div class="logo"> <!--logo -->
+		    <a class="link logo__link" href="index.html">
+			<img class="logo__image" src="images/logo.png" alt="AskZoo" title="AskZoo" />
+		    </a>
+		    <sub class="logo__slogan">
+			<span class="version">beta 0.1</span> Животные во всех подробностях
+		    </sub>
+		</div> <!-- /logo -->
+
+
+		<div class="auth"> <!--auth -->
+		    <div class="auth__section">
+			<span class="userpic box_base">
+			    <a href="#" class="userpic__link">
+				<img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName" />
+			    </a>
+			</span>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_blue-inverse">345</a>
+		    </div>
+		    <div class="auth__section">
+			<a href="#" class="box box_base bg-style_red-light"><i class="ico ico_content_write-guide"></i></a>
+		    </div>
+		</div> <!-- /auth -->
+	    </div>
+
+	    <nav class="nav"> <!-- nav -->
+		<div class="nav__item nav__item_type_active-category">
+		    <img class="active-category__image" src="images/content/category-img.png" alt="" title="" />
+		    <strong class="menu-item-title">
+			кошки
+			<small class="counter">3452</small>
+		    </strong>
+		    <a href="#" class="link box_base bg-style_blue-inverse category-changer">
+			<i class="ico ico_content_arrow-next"></i>
+		    </a>
+		</div>
+		<div class="nav__item nav__item_type_shelter">
+		    <a href="#" class="link menu__link">
+			<strong class="menu-item-title">
+			    приюты
+			    <small class="counter">352</small>
+			</strong>
+		    </a>
+		</div>
+		<div class="nav__item nav__item_type_sections">
+		    <ul class="menu menu__main">
+			<li class="menu__item menu__item_active">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    вопросы
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    темы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    эксперты
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    породы
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="menu__item">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    гайды
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    темы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    эксперты
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    заявки
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="menu__item">
+			    <a href="#" class="link menu__link">
+				<strong class="menu-item-title">
+				    фото
+				    <small class="counter">352</small>
+				</strong>
+			    </a>
+			    <ul class="menu menu_sub">
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    чемпионы
+					    <small class="counter">52</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    питомники
+					    <small class="counter">752</small>
+					</strong>
+				    </a>
+				</li>
+				<li class="menu__item">
+				    <a href="#" class="link menu__link">
+					<strong class="menu-item-title">
+					    породы
+					    <small class="counter">90</small>
+					</strong>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+		    </ul>
+
+		</div>
+		<div class="nav__item nav__item_type_category-action">
+		    <a href="#" class="link menu__link">
+			<strong class="menu-item-title">
+			    создать гайд
+			</strong>
+		    </a>
+		</div>
+	    </nav> <!-- /nav -->
+
+	    <section class="search"> <!-- search -->
+		<form action="#" method="post" class="form form_search-header">
+		    <fieldset class="fieldset">
+			<input type="text" class="field field_type_text field_type_search" placeholder="Что Вы ищете?" />
+			<span class="btn btn_search bg-style_blue"><input class="btn__in" type="submit" value="Найти"/></span>
+			<span class="search-results">Найдено 1231</span>
+		    </fieldset>
+		</form>
+	    </section> <!-- /search -->
+
+	</header>
+
+	<div class="page-layout">	 <!-- page-layout  -->
+
+	    <section class="navigator"> <!-- navigator  -->
+		<span class="navigator__title">Навигатор</span>
+		<ul class="menu menu_breadcrumbs">
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_home"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_main-category"></i></a>
+		    </li>
+		    <li class="menu__item menu__item_active">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_themes"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_tags"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link_icon"><i class="ico ico_content_date"></i></a>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">кошки </a><i class="ico ico_content_remove"></i>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">вопросы </a><i class="ico ico_content_remove"></i>
+		    </li>
+		    <li class="menu__item">
+			<a href="#" class="link menu__link">темы </a><i class="ico ico_content_remove"></i>
+		    </li>
+		</ul>
+	    </section> <!-- / navigator  -->
+
+	    <section class="author article_style_red">
+		<span class="userpic box_base">
+		    <a class="userpic__link" href="#">
+			<img title="UserName" alt="UserName" src="images/content/user2.png" class="userpic__image">
+		    </a>
+		</span>
+		<a class="link author__info" href="#">
+		    <span class="username">Валентин Петрович</span>
+		    <span class="status">Биолог-заводчик</span>
+		</a>
+	    </section>
+	    <header class="page-header page-header_article article_style_red"> <!-- page-header -->
+		<small class="date">12 АПР</small>
+		<h1 class="page-title">Почему клесты зимой выводят птенцов?</h1>
+		<div class="article-short">О содержании питомцев: при таком кучном содержании купировать заболевание.
+		    Если действительно инфекция, то передается от животного к животному по кругу.
+		</div>
+
+	    </header> <!-- / page-header -->
+
+	    <section class="page-content"> <!-- page-content -->
+		<div class="columns-layout">
+
+		    <div class="main"> <!-- main -->
+			<img src="images/content/article2.png" alt="Гайды" title="Гайды" class="section-illustrate" />
+
+			<div class="tabs" id="tabs-pseudo"> <!-- tabs -->
+			    <div class="tabs__header">
+				<ul class="tabs-title">
+				    <li class="tabs-title__item"><div class="link like-box"><i class="ico ico_content_plus-w"></i> <span class="like-box__text">Мне нравится</span></div></li>
+				    <li class="tabs-title__item"><a href="#tab1" class="link"><i class="ico ico_content_comments"></i> 30 Комментариев</a></li>
+				    <li class="tabs-title__item"><a href="#tab2" class="link"><i class="ico ico_content_plus-g"></i>24 плюса </a></li>
+				    <li class="tabs-title__item"><a href="#tab3" class="link"><i class="ico ico_content_view"></i>65 просмотров </a></li>
+				</ul>
+			    </div>
+			    <div class="tabs__content">
+				<div class="tab-content" id="tab1"> <!-- tab-content -->
+				    <div class="comments">
+					<ul class="comments-list comments-list_white"> <!-- comments-list -->
+					    <li class="comments-list__item">
+						<div class="comment">
+						    <span class="userpic box_base">
+							<a href="#" class="userpic__link">
+							    <img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName" />
+							</a>
+						    </span>
+
+						    <div class="comment__content standard-element__title_date">
+							<small class="date">2 ДЕК</small>
+							<span class="username"><a href="#" class="link">Игорь Чистяков</a>:</span>
+							<div class="comment-text">
+							    Наверное "Пионер" - это такой благотворительный проект Александра Маммута,
+							    культурно-социальная ответственность бизнеса. При очевидных нехилых таких затратах
+							    ("Пионер"больше похож на гибрид новиковского ресторана с бутиком MaxMara, который
+							    венчают удивительной красоты люстры а-ля сталинский ампир, чем, собственно, на кинотеатр)
+							    ценовая политика более чем демократичная: самый дорогой билет 350 рублей.
+							    За что товарищу Маммуту можно сказать большое человеческое спасибо.
+							</div>
+						    </div>
+						</div>
+					    </li>
+					    <li class="comments-list__item">
+						<div class="comment">
+						    <span class="userpic box_base">
+							<a href="#" class="userpic__link">
+							    <img class="userpic__image" src="images/content/user4.png" alt="UserName" title="UserName" />
+							</a>
+						    </span>
+
+						    <div class="comment__content standard-element__title_date">
+							<small class="date">2 ДЕК</small>
+							<span class="username"><a href="#" class="link">Ранго</a>:</span>
+							<div class="comment-text">
+							    товарищу Маммуту можно сказать большое человеческое спасибо.
+							</div>
+						    </div>
+						</div>
+					    </li>
+					    <li class="comments-list__item">
+						<div class="comment">
+						    <span class="userpic box box_base">
+							<a href="#" class="userpic__link">
+							    <img class="userpic__image" src="images/content/user4.png" alt="UserName" title="UserName" />
+							</a>
+						    </span>
+
+						    <div class="comment__content standard-element__title_date">
+							<small class="date">2 ФЕВ</small>
+							<span class="username"><a href="#" class="link">Алевтина</a>:</span>
+							<div class="comment-text">
+							    Очень интересно!
+							</div>
+						    </div>
+						</div>
+					    </li>
+					    <li class="comments-list__item">
+						<div class="comment">
+						    <span class="userpic box_base">
+							<a href="#" class="userpic__link">
+							    <img class="userpic__image" src="images/content/user1.png" alt="UserName" title="UserName" />
+							</a>
+						    </span>
+
+						    <div class="comment__content standard-element__title_date">
+							<small class="date">2 ДЕК</small>
+							<span class="username"><a href="#" class="link">Игорь Чистяков</a>:</span>
+							<div class="comment-text">
+							    Наверное "Пионер" - это такой благотворительный проект Александра Маммута,
+							    культурно-социальная ответственность бизнеса. При очевидных нехилых таких затратах
+							    ("Пионер"больше похож на гибрид новиковского ресторана с бутиком MaxMara, который
+							    венчают удивительной красоты люстры а-ля сталинский ампир, чем, собственно, на кинотеатр)
+							    ценовая политика более чем демократичная: самый дорогой билет 350 рублей.
+							    За что товарищу Маммуту можно сказать большое человеческое спасибо.
+							</div>
+						    </div>
+						</div>
+					    </li>
+					</ul>
+				    </div>
+				    <form class="form form_comment" action="#" method="post">
+					<fieldset class="fieldset">
+					    <div class="form-field">
+						<input type="text" class="field field_type_text" placeholder="Ваш ответ" />
+					    </div>
+					    <span class="btn bg-style_blue"><input class="btn__in" type="submit" value="Отправить"/></span>
+					</fieldset>
+				    </form>
+				</div> <!-- / tab-content -->
+
+				<div class="tab-content" id="tab2"> <!-- tab-content -->
+				    <ul class="guides-list guides-list_plus">
+					<li class="guides-list__item">
+					    <div class="guide">
+
+						<span class="userpic box_base">
+						    <a class="userpic__link" href="#">
+							<img title="UserName" alt="UserName" src="images/content/user8.png" class="userpic__image">
+						    </a>
+						</span>
+						<a class="link guide__link standard-element__title_date" href="#">
+						    <span class="guide__title">Ольга Петрова</span>
+						    <small class="date">7 АПР</small>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+
+						<span class="userpic box_base">
+						    <a class="userpic__link" href="#">
+							<img title="UserName" alt="UserName" src="images/content/user5.png" class="userpic__image">
+						    </a>
+						</span>
+						<a class="link guide__link standard-element__title_date" href="#">
+						    <span class="guide__title">Ранго</span>
+						    <small class="date">2 ДЕК</small>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+
+						<span class="userpic box_base">
+						    <a class="userpic__link" href="#">
+							<img title="UserName" alt="UserName" src="images/content/user1.png" class="userpic__image">
+						    </a>
+						</span>
+						<a class="link guide__link standard-element__title_date" href="#">
+						    <span class="guide__title">Олег Девяткин</span>
+						    <small class="date">2 ДЕК</small>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+
+						<span class="userpic box_base">
+						    <a class="userpic__link" href="#">
+							<img title="UserName" alt="UserName" src="images/content/user9.png" class="userpic__image">
+						    </a>
+						</span>
+						<a class="link guide__link standard-element__title_date" href="#">
+						    <span class="guide__title">Арт-КОт</span>
+						    <small class="date">2 ДЕК</small>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+
+						<span class="userpic box_base">
+						    <a class="userpic__link" href="#">
+							<img title="UserName" alt="UserName" src="images/content/user4.png" class="userpic__image">
+						    </a>
+						</span>
+						<a class="link guide__link standard-element__title_date" href="#">
+						    <span class="guide__title">Вася Петин</span>
+						    <small class="date">2 ДЕК</small>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+
+						<span class="userpic box_base">
+						    <a class="userpic__link" href="#">
+							<img title="UserName" alt="UserName" src="images/content/user4.png" class="userpic__image">
+						    </a>
+						</span>
+						<a class="link guide__link standard-element__title_date" href="#">
+						    <span class="guide__title">Кошка</span>
+						    <small class="date">2 ДЕК</small>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+
+						<span class="userpic box_base">
+						    <a class="userpic__link" href="#">
+							<img title="UserName" alt="UserName" src="images/content/user9.png" class="userpic__image">
+						    </a>
+						</span>
+						<a class="link guide__link standard-element__title_date" href="#">
+						    <span class="guide__title">Рашид</span>
+						    <small class="date">2 ДЕК</small>
+						</a>
+					    </div>
+					</li>
+				    </ul>
+				</div>
+
+				<div class="tab-content" id="tab3"> <!-- tab-content -->
+				    <ul class="guides-list guides-list_requests">
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">3</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Январь</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">33</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Февраль</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">9</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Март</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">11</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Апрель</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">1</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Май</span>
+						</a>
+					    </div>
+					</li>
+					<li class="guides-list__item">
+					    <div class="guide">
+						<a class="box box_base bg-style_gray-light" href="#">8</a>
+						<a class="link guide__link" href="#">
+						    <span class="guide__title">Июнь</span>
+						</a>
+					    </div>
+					</li>
+
+
+				    </ul>
+				</div>     <!-- /tab-content -->
+			    </div><!-- / tabs content -->
+
+
+
+			</div> <!-- / tabs -->
+			<article class="article"> <!-- article -->
+			    <div class="text-block">
+				<p>По клинической картине нельзя определить возбудителя — это я как биолог Вам говорю.
+				    О содержании питомцев: при таком кучном содержании купировать заболевание НЕВОЗМОЖНО.
+				    Если действительно инфекция, то передается от животного к животному по кругу.  </p>
+				<p>
+				    Дробите поголовье на мелкие группы (лучше конечно по одной голове в клетку)
+				    Прямых контактов не допускайте. О лечении: антибиотики применяют курсом и в комплексе.
+				    Без системное и безкомплексное употребление приводит к плохим результатам. Очень жаль,
+				    что такая ситуация, я искрее сочувствую, но к сожалению без каких либо данных исслеований посоветовать что то сложно.
+				</p>
+				<img src="images/content/aside2.png" class="align-center" alt="" title="" width="400" height="261"/>
+				<p>
+				    Дробите поголовье на мелкие группы (лучше конечно по одной голове в клетку)
+				    Прямых контактов не допускайте. О лечении: антибиотики применяют курсом и в комплексе.
+				    Без системное и безкомплексное <strong>употребление приводит к плохим результатам</strong>. Очень жаль,
+				    что такая ситуация, я искрее сочувствую, но к сожалению без каких либо данных исслеований посоветовать что то сложно.
+				</p>
+				<p>
+				    Тянет с улицы, но закрыть окно нельзя, потому что будет жарко – дом хоть и каменный, но прогревается быстро, видимо, и до
+				    <a href="#">революции</a> доходные дома строили, как не для себя: вид производит солидный, да и ладно, меж стен можно понасыпать трухи.
+				</p>
+				<p> Запах краски – это запах лета, когда пух летит и липнет на заборы вперемешку
+				    с комарами и мошкарой, когда скамейки опасно привлекательны, зелень их, свежевыкрашенных,
+				    остается несмываемыми полосами на штанах.</p>
+
+				<h1>Ветеринарные препараты</h1>
+				<div class="text-section">
+				    <h2>Анальгин</h2>
+				    <p>
+					Дробите поголовье на мелкие группы(лучше конечно по одной голове в клетку)
+					Прямых контактов не допускайте. О лечении: <mark>антибиотики применяют курсом </mark>
+					и в комплексе. Без системное и безкомплексное употребление приводит
+					к плохим результатам. Очень жаль, что такая ситуация, я искрее сочувствую,
+					но к сожалению без каких либо данных исслеований посоветовать что то сложно.
+				    </p>
+				    <h3>Схема применения</h3>
+				    <ul>
+					<li>Без системное и безкомплексное </li>
+					<li>Очень жаль искрее сочувствую, но к сожалению без каких либо данных исслеований посоветовать что то сложно.</li>
+					<li>Употребление приводит </li>
+				    </ul>
+				</div>
+				<div class="text-section">
+				    <h2>Баралгин</h2>
+				    <p>
+					Дробите поголовье на мелкие группы(лучше конечно по одной голове в клетку)
+					Прямых контактов не допускайте. О лечении: <mark>антибиотики применяют курсом </mark>
+					и в комплексе. Без системное и безкомплексное употребление приводит
+					к плохим результатам. Очень жаль, что такая ситуация, я искрее сочувствую,
+					но к сожалению без каких либо данных исслеований посоветовать что то сложно.
+				    </p>
+
+				</div>
+
+			    </div>
+			</article> <!-- / article -->
+
+			<div class="article-sources">
+			    <h4>Источники</h4>
+			    <ul class="sources-list">
+				<li class="sources-list__item"><a href="#" class="link">Официальная страница игры</a> <small class="source-info"> (англ.). Архивировано из первоисточника 18 июня 2013. </small></li>
+				<li class="sources-list__item"><a href="#" class="link">Официальная российская страница игры.</a> <small class="source-info"> Архивировано из первоисточника 18 июня 2013. </small></li>
+				<li class="sources-list__item"><a href="#" class="link">Alice: Madness Returns на сайте Twitter</a> <small class="source-info"> (англ.)</small></li>
+			    </ul>
+			</div>
+
+
+
+		    </div> <!-- / main -->
+		    <div class="sidebar"> <!-- sidebar -->
+			<div class="aside">
+			    <div class="aside__content">
+				<div class="article-short">
+				    <div class="share">Тут место для блока с шарой</div>
+				</div>
+			    </div>
+			</div>
+			<aside class="aside">
+			    <h3 class="aside__header bg-style_gray-dark">
+				<a class="link" href="#">
+				    <span class="aside__header__text"> Похожие гайды</span>
+				</a>
+			    </h3>
+			    <div class="aside__content">
+				<ul class="guides-list">
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a class="link guide__link" href="#">
+						<span class="guide__title">Балинез или балийская кошка</span>
+						<small class="guide__points">+34</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a class="link guide__link" href="#">
+						<span class="guide__title">Игрушки для кошек</span>
+						<small class="guide__points">+4</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a class="link guide__link" href="#">
+
+						<span class="guide__title">Кошка и вода</span>
+						<small class="guide__points">+34</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a class="link guide__link" href="#">
+						<span class="guide__title">Как отучить кошку драть обои
+						    и мебель</span>
+						<small class="guide__points">+544</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a class="link guide__link" href="#">
+						<span class="guide__title">Какотучитькошкудратьобоиимебель,ковры,шторы,одежду,обувь</span>
+						<small class="guide__points">+544</small>
+					    </a>
+					</div>
+				    </li>
+
+
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a class="link guide__link" href="#">
+						<span class="guide__title">Сурикаты ушастые</span>
+						<small class="guide__points">+34</small>
+					    </a>
+					</div>
+				    </li>
+				    <li class="guides-list__item">
+					<div class="guide">
+					    <a class="link guide__link" href="#">
+						<span class="guide__title">Саванна</span>
+						<small class="guide__points">+6</small>
+					    </a>
+					</div>
+				    </li>
+				</ul>
+			    </div>
+			</aside>
+		    </div> <!-- / sidebar -->
+		</div>
+	    </section> <!-- / page-content -->
+	</div> <!-- / page-layout  -->
+    </div>
+</body>
+</html>
