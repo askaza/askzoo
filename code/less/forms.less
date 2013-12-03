@@ -239,7 +239,7 @@ select {
 }
 
 .jq-selectbox__dropdown {
-    background: #D9DBDC;
+    background: #f2f3f2;
     padding:0 1px;
     left:0;
     max-height:250px;
@@ -247,15 +247,18 @@ select {
     width:100%;
 
     li {
-	background:#D9DBDC;
+	background:#f2f3f2;
 	cursor:pointer;
 	padding:14px;
-	border-bottom:1px solid #F2F3F2;
+	border-bottom:1px solid #ebecee;
 
-	&.sel,
 	&.selected,
 	&:hover {
-	    background:#e4e6e5;
+	    background:#ebedeb;
+	}
+	&.sel,
+	&.sel:hover {
+	    background:#fff;
 	}
     }
 }
