@@ -309,6 +309,10 @@
 	    width:300px;
 	}
 
+	.breed-link {
+	    height:80px;
+	}
+
 	.aside__header__text {
 	    display:inline-block;
 	    padding:3px 15px 0;
@@ -512,6 +516,70 @@
     }
 }
 
+.aside_type_breed {
+    .aside__header {
+	height:80px;
+
+	.link {
+	    height:80px;
+	    background:#00b88a;
+
+	    &:hover {
+		background:#2ec19c;
+	    }
+	}
+
+    }
+    .action-menu {
+	height:80px;
+	line-height:80px;
+    }
+}
+.aside_type_nursery {
+    .aside__header {
+	height:60px;
+
+	.link {
+	    height:60px;
+	}
+    }
+    .action-menu {
+	height:60px;
+	line-height:60px;
+    }
+}
+
+.aside_type_profile {
+    background:#edeef0;
+
+    .aside__header {
+	border-top:1px solid #dee0e2;
+	border-bottom:1px solid #dee0e2;
+
+	&:hover {
+	    background:#d9dbde;
+	}
+	.username {
+	    color:#4b5962;
+	    font:15px/19px @font-family-base;
+	}
+    }
+    .text-block,
+    .text-block p {
+	color:#4b5962;
+	font-size:15px;
+	line-height:22px;
+    }
+
+    .date {
+	display:block;
+	margin-bottom:10px;
+	height:auto;
+	line-height:24px;
+	position:static;
+	right:auto;
+    }
+}
 /* aside block > */
 
 /* users-top < */
@@ -1527,4 +1595,6 @@
 	   }
 	}
 }
+
+
 /* foto > */
