@@ -270,6 +270,9 @@
     .date {
 	top:27px;
     }
+    .article-short {
+	color:#a2a8ac;
+    }
 
 }
 
@@ -307,6 +310,11 @@
 	    text-transform:uppercase;
 	    word-break: break-all;
 	    width:300px;
+	}
+
+	.bg-style_yellow,
+	.bg-style_yellow:hover {
+	    color:#4B5962;
 	}
 
 	.breed-link {
@@ -403,6 +411,8 @@
 	    text-decoration:none;
 	}
     }
+
+
 }
 
 .article_style_red {
@@ -578,6 +588,9 @@
 	line-height:24px;
 	position:static;
 	right:auto;
+    }
+    .userpic {
+	margin-bottom:18px;
     }
 }
 /* aside block > */
@@ -852,6 +865,7 @@
 /* short gallery < */
 
 .short-gallery {
+    background:#8d979d;
     height:50px;
     overflow:hidden;
 
@@ -1002,7 +1016,6 @@
 
 	.ico {
 	    margin-right:10px;
-	    margin-top:-1px;
 	}
 
     }
@@ -1022,6 +1035,10 @@
 	    &:hover {
 		background:@red-light;
 	    }
+	}
+
+	.ico_content_replay {
+	    background-position:0 -234px;
 	}
     }
     .bg-style_red-light {
@@ -1065,8 +1082,9 @@
     position:relative;
     font-size:15px;
     line-height:20px;
+    .transition(all 0.2s ease);
 
-    .userpic {
+    .box_base {
 	float:left;
     }
 
@@ -1083,6 +1101,19 @@
     .username .link {
 	color:#1c1c1c;
 	text-decoration:none;
+    }
+
+    &:hover {
+	background:#e9ebe8;
+
+	.username .link {
+	    color:#0042af;
+	}
+
+	.bg-style_gray-light {
+	    background:@green;
+	    color:#fff;
+	}
     }
 }
 .comment_expert {
