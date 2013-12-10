@@ -316,6 +316,13 @@
 	.bg-style_yellow:hover {
 	    color:#4B5962;
 	}
+	
+	.bg-style_green {
+	    background:#00B88A;
+	    &:hover {
+		background:#2ec19c;
+	    }
+	}	
 
 	.breed-link {
 	    height:80px;
@@ -531,12 +538,7 @@
 	height:80px;
 
 	.link {
-	    height:80px;
-	    background:#00b88a;
-
-	    &:hover {
-		background:#2ec19c;
-	    }
+	    height:80px;	   
 	}
 
     }
@@ -558,6 +560,10 @@
 	line-height:60px;
     }
 }
+
+
+
+
 
 .aside_type_profile {
     background:#edeef0;
@@ -1052,6 +1058,15 @@
 
 .tab-content {
     display:none;
+    
+    .guides-list_plus, 
+    .guides-list_requests {
+	.guides-list__item {
+	    &:first-child {
+		border-top:0;
+	    }
+	}
+    }
 }
 
 
@@ -1441,7 +1456,11 @@
 	font-family:Arial;
 	line-height:18px;
 	h5 {
-	    margin-bottom:5px;
+	    margin-bottom:8px;
+	    color:#D7F0E8;
+	    font-size:14px;
+	    text-transform:none;
+	    font-family:Arial;
 	}
     }
 }
@@ -1629,3 +1648,40 @@
 
 
 /* foto > */
+
+/* profile short < */
+
+.profile-short {
+    position:relative;
+    
+    &.article-short {
+	padding-bottom:20px;
+    }
+    .ico {
+	left:16px;
+	top:21px;
+	position:absolute;
+    }
+    .ico_content_label {
+	left: 23px;
+	top: 24px;
+    }
+    .profile-details {
+	color:#4b5962;
+	font:15px/24px @font-family-narrow;	
+	text-transform:uppercase;
+	padding-left:28px;
+    }
+}
+
+.profile-short + .article-short {
+        border-top:1px solid #dee0e2;
+}
+
+/* profile short > */
+
+.map {
+    position:relative;
+    width:690px;
+    overflow:hidden;
+}

@@ -879,6 +879,11 @@ h5 {
   margin-top: -3px;
   width: 16px;
 }
+.ico_content_folder {
+  background-position: 0 -397px;
+  height: 16px;
+  width: 16px;
+}
 /* 16 < */
 /* 24 > */
 .ico_content_warning {
@@ -1625,6 +1630,12 @@ input[type="button"] {
 .aside .aside__header .bg-style_yellow:hover {
   color: #4B5962;
 }
+.aside .aside__header .bg-style_green {
+  background: #00B88A;
+}
+.aside .aside__header .bg-style_green:hover {
+  background: #2ec19c;
+}
 .aside .aside__header .breed-link {
   height: 80px;
 }
@@ -1794,10 +1805,6 @@ input[type="button"] {
 }
 .aside_type_breed .aside__header .link {
   height: 80px;
-  background: #00b88a;
-}
-.aside_type_breed .aside__header .link:hover {
-  background: #2ec19c;
 }
 .aside_type_breed .action-menu {
   height: 80px;
@@ -2226,6 +2233,10 @@ input[type="button"] {
 .tab-content {
   display: none;
 }
+.tab-content .guides-list_plus .guides-list__item:first-child,
+.tab-content .guides-list_requests .guides-list__item:first-child {
+  border-top: 0;
+}
 /* tabs > */
 /* comments-list < */
 .comments-list__item {
@@ -2539,7 +2550,11 @@ input[type="button"] {
   line-height: 18px;
 }
 .form-header .advice-text h5 {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  color: #D7F0E8;
+  font-size: 14px;
+  text-transform: none;
+  font-family: Arial;
 }
 /* form header > */
 /* form box < */
@@ -2729,7 +2744,39 @@ input[type="button"] {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
   filter: alpha(opacity=90);
 }
-/* foto > *//* clearing > */
+/* foto > */
+/* profile short < */
+.profile-short {
+  position: relative;
+}
+.profile-short.article-short {
+  padding-bottom: 20px;
+}
+.profile-short .ico {
+  left: 16px;
+  top: 21px;
+  position: absolute;
+}
+.profile-short .ico_content_label {
+  left: 23px;
+  top: 24px;
+}
+.profile-short .profile-details {
+  color: #4b5962;
+  font: 15px/24px 'PTSansNarrowRegular', ArialNarrow, Arial, Tahoma, sans-serif;
+  text-transform: uppercase;
+  padding-left: 28px;
+}
+.profile-short + .article-short {
+  border-top: 1px solid #dee0e2;
+}
+/* profile short > */
+.map {
+  position: relative;
+  width: 690px;
+  overflow: hidden;
+}
+/* clearing > */
 .clearfix:after,
 .nav:after,
 .header:after,
